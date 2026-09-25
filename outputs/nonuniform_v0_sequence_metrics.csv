@@ -1,0 +1,541 @@
+seq_id,scan,subset,sched_key,sched_name,family,K,abs_rel,rmse,rot_err_deg,trans_err_deg,recurrent_flops_gflops
+scan1_subset_middle,scan1,subset_middle,uniform_K8,Uniform K=8,baseline,8,0.003911252676819761,7.53405221303304,0.0,22.897360221298257,2313.079904
+scan1_subset_middle,scan1,subset_middle,uniform_K10,Uniform K=10,baseline,10,0.0041426420987894135,7.56079630057017,0.0,13.23354811497767,2891.34988
+scan1_subset_middle,scan1,subset_middle,uniform_K12,Uniform K=12,baseline,12,0.004237998742610216,7.508228937784831,0.0,7.958901658149943,3469.6198560000003
+scan1_subset_middle,scan1,subset_middle,uniform_K13,Uniform K=13,baseline,13,0.004365991180141767,7.499119400978088,0.0,24.88693357519195,3758.754844
+scan1_subset_middle,scan1,subset_middle,uniform_K14,Uniform K=14,baseline,14,0.004220823602130015,7.422788103421529,0.0,24.450249984066634,4047.8898320000003
+scan1_subset_middle,scan1,subset_middle,uniform_K16,Uniform K=16,baseline,16,0.0042797305310765905,7.344129999478658,0.0,14.145897116705752,4626.159808
+scan1_subset_middle,scan1,subset_middle,power_K8_g0.5,Power K=8 (gamma=0.5),power,8,0.004436009835141401,7.948711156845093,0.0,24.991385265824054,2313.079904
+scan1_subset_middle,scan1,subset_middle,power_K8_g0.75,Power K=8 (gamma=0.75),power,8,0.004162207556267579,7.7243601481119795,0.0,17.902918966797422,2313.079904
+scan1_subset_middle,scan1,subset_middle,power_K8_g1.25,Power K=8 (gamma=1.25),power,8,0.0036836586271723113,7.397060751914978,0.0,11.595432114412995,2313.079904
+scan1_subset_middle,scan1,subset_middle,power_K8_g1.5,Power K=8 (gamma=1.5),power,8,0.0036054332352553806,7.298825065294902,0.0,20.381404936549973,2313.079904
+scan1_subset_middle,scan1,subset_middle,power_K8_g2.0,Power K=8 (gamma=2.0),power,8,0.003559795208275318,7.224193255106608,0.0,23.686413093835018,2313.079904
+scan1_subset_middle,scan1,subset_middle,cosine_late_K8,Cosine Late-Dense K=8,cosine,8,0.003548369277268648,7.217474659283956,0.0,9.533803155155192,2313.079904
+scan1_subset_middle,scan1,subset_middle,cosine_early_K8,Cosine Early-Dense K=8,cosine,8,0.004638588017163177,7.893436988194783,0.0,23.1809259478446,2313.079904
+scan1_subset_middle,scan1,subset_middle,cosine_endpoints_K8,Cosine Endpoints-Dense K=8,cosine,8,0.004076634727728863,7.498400727907817,0.0,9.765523263589495,2313.079904
+scan1_subset_middle,scan1,subset_middle,cosine_middle_K8,Cosine Middle-Dense K=8,cosine,8,0.003715348468783001,7.598867654800415,0.0,25.63038489428507,2313.079904
+scan1_subset_middle,scan1,subset_middle,piecewise_early_K8,Piecewise Early-Dense K=8,piecewise,8,0.0036525136092677712,7.286277810732524,0.0,14.015635012760768,2313.079904
+scan1_subset_middle,scan1,subset_middle,piecewise_late_K8,Piecewise Late-Dense K=8,piecewise,8,0.004523697425611317,7.889735380808513,0.0,16.310755122713577,2313.079904
+scan1_subset_middle,scan1,subset_middle,piecewise_middle_K8,Piecewise Middle-Dense K=8,piecewise,8,0.00364046225634714,7.434686581293742,0.0,11.625502555842504,2313.079904
+scan1_subset_middle,scan1,subset_middle,piecewise_endpoints_K8,Piecewise Endpoints-Dense K=8,piecewise,8,0.003726730433603128,7.36935289700826,0.0,21.941958625134358,2313.079904
+scan1_subset_middle,scan1,subset_middle,random_K8_s42,Random Monotonic K=8 (seed=42),random,8,0.0043183459201827645,7.813840985298157,0.0,16.77973000283856,2313.079904
+scan1_subset_middle,scan1,subset_middle,random_K8_s123,Random Monotonic K=8 (seed=123),random,8,0.004131481943962474,7.631734013557434,0.0,11.719681099460901,2313.079904
+scan1_subset_middle,scan1,subset_middle,random_K8_s999,Random Monotonic K=8 (seed=999),random,8,0.0036644508751730123,7.38971221446991,0.0,22.548710991746088,2313.079904
+scan1_subset_middle,scan1,subset_middle,power_K10_g0.5,Power K=10 (gamma=0.5),power,10,0.004346011206507683,7.899357159932454,0.0,19.308311959484666,2891.34988
+scan1_subset_middle,scan1,subset_middle,power_K10_g0.75,Power K=10 (gamma=0.75),power,10,0.004185023484751582,7.718035618464152,0.0,11.035576911646585,2891.34988
+scan1_subset_middle,scan1,subset_middle,power_K10_g1.25,Power K=10 (gamma=1.25),power,10,0.003934870202404757,7.371602853139241,0.0,8.540794181682186,2891.34988
+scan1_subset_middle,scan1,subset_middle,power_K10_g1.5,Power K=10 (gamma=1.5),power,10,0.004098185570910573,7.278018752733867,0.0,13.517002441850131,2891.34988
+scan1_subset_middle,scan1,subset_middle,power_K10_g2.0,Power K=10 (gamma=2.0),power,10,0.0038587981835007668,7.161733190218608,0.0,12.265856909636705,2891.34988
+scan1_subset_middle,scan1,subset_middle,cosine_late_K10,Cosine Late-Dense K=10,cosine,10,0.003930869900311033,7.160751104354858,0.0,18.247730679466155,2891.34988
+scan1_subset_middle,scan1,subset_middle,cosine_early_K10,Cosine Early-Dense K=10,cosine,10,0.0042866940299669904,7.763846596082051,0.0,16.3581140936135,2891.34988
+scan1_subset_middle,scan1,subset_middle,cosine_endpoints_K10,Cosine Endpoints-Dense K=10,cosine,10,0.004102097436164816,7.459150314331055,0.0,13.631343250331154,2891.34988
+scan1_subset_middle,scan1,subset_middle,cosine_middle_K10,Cosine Middle-Dense K=10,cosine,10,0.0037240792298689485,7.54452645778656,0.0,13.226636924032972,2891.34988
+scan1_subset_middle,scan1,subset_middle,piecewise_early_K10,Piecewise Early-Dense K=10,piecewise,10,0.00375348391632239,7.146578590075175,0.0,10.26111364334208,2891.34988
+scan1_subset_middle,scan1,subset_middle,piecewise_late_K10,Piecewise Late-Dense K=10,piecewise,10,0.00426629950137188,7.778109590212504,0.0,10.157495120173541,2891.34988
+scan1_subset_middle,scan1,subset_middle,piecewise_middle_K10,Piecewise Middle-Dense K=10,piecewise,10,0.0038583806017413735,7.506533185640971,0.0,16.341033747063904,2891.34988
+scan1_subset_middle,scan1,subset_middle,piecewise_endpoints_K10,Piecewise Endpoints-Dense K=10,piecewise,10,0.004025930888019502,7.291013598442078,0.0,9.356895154727683,2891.34988
+scan1_subset_middle,scan1,subset_middle,random_K10_s42,Random Monotonic K=10 (seed=42),random,10,0.0041553251988564925,7.713545163472493,0.0,10.86148129497068,2891.34988
+scan1_subset_middle,scan1,subset_middle,random_K10_s123,Random Monotonic K=10 (seed=123),random,10,0.004371132973271112,7.337157567342122,0.0,20.061827909165334,2891.34988
+scan1_subset_middle,scan1,subset_middle,random_K10_s999,Random Monotonic K=10 (seed=999),random,10,0.004015827551484108,7.319051384925842,0.0,9.697514180676132,2891.34988
+scan1_subset_middle,scan1,subset_middle,power_K12_g0.5,Power K=12 (gamma=0.5),power,12,0.004200355537856619,7.8587736288706465,0.0,18.031041362795815,3469.6198560000003
+scan1_subset_middle,scan1,subset_middle,power_K12_g0.75,Power K=12 (gamma=0.75),power,12,0.004162613418884575,7.657781759897868,0.0,13.190675880224623,3469.6198560000003
+scan1_subset_middle,scan1,subset_middle,power_K12_g1.25,Power K=12 (gamma=1.25),power,12,0.0043029867035026355,7.316485047340393,0.0,2.6560452393895937,3469.6198560000003
+scan1_subset_middle,scan1,subset_middle,power_K12_g1.5,Power K=12 (gamma=1.5),power,12,0.0044332100078463554,7.260730504989624,0.0,7.8585588154447565,3469.6198560000003
+scan1_subset_middle,scan1,subset_middle,power_K12_g2.0,Power K=12 (gamma=2.0),power,12,0.004520803379515807,7.368715763092041,0.0,7.798911146949007,3469.6198560000003
+scan1_subset_middle,scan1,subset_middle,cosine_late_K12,Cosine Late-Dense K=12,cosine,12,0.0044974134070798755,7.320366382598877,0.0,20.403809397770644,3469.6198560000003
+scan1_subset_middle,scan1,subset_middle,cosine_early_K12,Cosine Early-Dense K=12,cosine,12,0.004253177049880226,7.741935928662618,0.0,10.670065705941795,3469.6198560000003
+scan1_subset_middle,scan1,subset_middle,cosine_endpoints_K12,Cosine Endpoints-Dense K=12,cosine,12,0.004455052975875636,7.420630733172099,0.0,22.413923736286886,3469.6198560000003
+scan1_subset_middle,scan1,subset_middle,cosine_middle_K12,Cosine Middle-Dense K=12,cosine,12,0.00391893550598373,7.527930498123169,0.0,13.093324607015049,3469.6198560000003
+scan1_subset_middle,scan1,subset_middle,piecewise_early_K12,Piecewise Early-Dense K=12,piecewise,12,0.004320169837834935,7.29195495446523,0.0,7.351040951049775,3469.6198560000003
+scan1_subset_middle,scan1,subset_middle,piecewise_late_K12,Piecewise Late-Dense K=12,piecewise,12,0.004090301614875595,7.699054678281148,0.0,24.102557630221977,3469.6198560000003
+scan1_subset_middle,scan1,subset_middle,piecewise_middle_K12,Piecewise Middle-Dense K=12,piecewise,12,0.004234712881346543,7.416398326555888,0.0,12.385734662550561,3469.6198560000003
+scan1_subset_middle,scan1,subset_middle,piecewise_endpoints_K12,Piecewise Endpoints-Dense K=12,piecewise,12,0.004461208047966163,7.413636883099874,0.0,17.67002918846775,3469.6198560000003
+scan1_subset_middle,scan1,subset_middle,random_K12_s42,Random Monotonic K=12 (seed=42),random,12,0.004293957259505987,7.752418756484985,0.0,11.128764312996438,3469.6198560000003
+scan1_subset_middle,scan1,subset_middle,random_K12_s123,Random Monotonic K=12 (seed=123),random,12,0.004638273812209566,7.370853066444397,0.0,20.071174907429317,3469.6198560000003
+scan1_subset_middle,scan1,subset_middle,random_K12_s999,Random Monotonic K=12 (seed=999),random,12,0.004434792868172129,7.436872482299805,0.0,17.48792070157184,3469.6198560000003
+scan1_subset_uniform,scan1,subset_uniform,uniform_K8,Uniform K=8,baseline,8,0.003690778937501212,6.073061029116313,0.0,19.79396316890831,2313.079904
+scan1_subset_uniform,scan1,subset_uniform,uniform_K10,Uniform K=10,baseline,10,0.0033354321494698524,5.948920845985413,0.0,14.782840458020194,2891.34988
+scan1_subset_uniform,scan1,subset_uniform,uniform_K12,Uniform K=12,baseline,12,0.003224855948550006,5.919878244400024,0.0,17.40836513939919,3469.6198560000003
+scan1_subset_uniform,scan1,subset_uniform,uniform_K13,Uniform K=13,baseline,13,0.0032436982728540897,5.916817148526509,0.0,16.71388502267503,3758.754844
+scan1_subset_uniform,scan1,subset_uniform,uniform_K14,Uniform K=14,baseline,14,0.0032562322448939085,5.917924284934998,0.0,17.53761914121789,4047.8898320000003
+scan1_subset_uniform,scan1,subset_uniform,uniform_K16,Uniform K=16,baseline,16,0.003216166631318629,5.940981189409892,0.0,17.491902817473143,4626.159808
+scan1_subset_uniform,scan1,subset_uniform,power_K8_g0.5,Power K=8 (gamma=0.5),power,8,0.004564552917145193,6.415411909421285,0.0,29.492307288716404,2313.079904
+scan1_subset_uniform,scan1,subset_uniform,power_K8_g0.75,Power K=8 (gamma=0.75),power,8,0.003995353550029297,6.188855330149333,0.0,5.4076844545944125,2313.079904
+scan1_subset_uniform,scan1,subset_uniform,power_K8_g1.25,Power K=8 (gamma=1.25),power,8,0.00342953127498428,6.011683225631714,0.0,6.535731559576486,2313.079904
+scan1_subset_uniform,scan1,subset_uniform,power_K8_g1.5,Power K=8 (gamma=1.5),power,8,0.0032640734765057764,5.991125424702962,0.0,13.685055688988102,2313.079904
+scan1_subset_uniform,scan1,subset_uniform,power_K8_g2.0,Power K=8 (gamma=2.0),power,8,0.0032640555097411075,6.043277899424235,0.0,27.16879018259485,2313.079904
+scan1_subset_uniform,scan1,subset_uniform,cosine_late_K8,Cosine Late-Dense K=8,cosine,8,0.0032312379917129874,6.002757827440898,1.1944405724589888,13.89039693094368,2313.079904
+scan1_subset_uniform,scan1,subset_uniform,cosine_early_K8,Cosine Early-Dense K=8,cosine,8,0.004502879339270294,6.3835145235061646,1.1944405724589888,27.240083750512298,2313.079904
+scan1_subset_uniform,scan1,subset_uniform,cosine_endpoints_K8,Cosine Endpoints-Dense K=8,cosine,8,0.0037111035004879036,6.123409549395244,0.0,15.07345824816287,2313.079904
+scan1_subset_uniform,scan1,subset_uniform,cosine_middle_K8,Cosine Middle-Dense K=8,cosine,8,0.003611249034292996,6.03937033812205,0.0,20.03615842186494,2313.079904
+scan1_subset_uniform,scan1,subset_uniform,piecewise_early_K8,Piecewise Early-Dense K=8,piecewise,8,0.003449562704190612,6.142738421758016,0.0,7.667336339342486,2313.079904
+scan1_subset_uniform,scan1,subset_uniform,piecewise_late_K8,Piecewise Late-Dense K=8,piecewise,8,0.004484491772018373,6.375734607378642,0.0,6.589716707765604,2313.079904
+scan1_subset_uniform,scan1,subset_uniform,piecewise_middle_K8,Piecewise Middle-Dense K=8,piecewise,8,0.003405123328169187,5.994078040122986,0.0,6.7167455264448535,2313.079904
+scan1_subset_uniform,scan1,subset_uniform,piecewise_endpoints_K8,Piecewise Endpoints-Dense K=8,piecewise,8,0.003479950207596024,6.049482981363933,0.0,20.020552409000285,2313.079904
+scan1_subset_uniform,scan1,subset_uniform,random_K8_s42,Random Monotonic K=8 (seed=42),random,8,0.004193252961461742,6.2517731587092085,0.0,19.639074061965434,2313.079904
+scan1_subset_uniform,scan1,subset_uniform,random_K8_s123,Random Monotonic K=8 (seed=123),random,8,0.004239993053488433,6.602369467417399,0.0,5.704542156152424,2313.079904
+scan1_subset_uniform,scan1,subset_uniform,random_K8_s999,Random Monotonic K=8 (seed=999),random,8,0.0033877747676645717,6.013959328333537,0.0,16.801566891347456,2313.079904
+scan1_subset_uniform,scan1,subset_uniform,power_K10_g0.5,Power K=10 (gamma=0.5),power,10,0.003924963724178572,6.176317413647969,0.0,4.785405627256218,2891.34988
+scan1_subset_uniform,scan1,subset_uniform,power_K10_g0.75,Power K=10 (gamma=0.75),power,10,0.0035398085601627827,6.0237776438395185,0.0,4.6919841496316845,2891.34988
+scan1_subset_uniform,scan1,subset_uniform,power_K10_g1.25,Power K=10 (gamma=1.25),power,10,0.003177627882299324,5.90212098757426,0.0,14.71708003702154,2891.34988
+scan1_subset_uniform,scan1,subset_uniform,power_K10_g1.5,Power K=10 (gamma=1.5),power,10,0.0031319364982967577,5.8818279504776,0.0,4.988685770694992,2891.34988
+scan1_subset_uniform,scan1,subset_uniform,power_K10_g2.0,Power K=10 (gamma=2.0),power,10,0.0030358212534338236,5.873544931411743,0.0,14.465310833200116,2891.34988
+scan1_subset_uniform,scan1,subset_uniform,cosine_late_K10,Cosine Late-Dense K=10,cosine,10,0.0030678543650234738,5.8789299329121905,0.0,25.395032654890098,2891.34988
+scan1_subset_uniform,scan1,subset_uniform,cosine_early_K10,Cosine Early-Dense K=10,cosine,10,0.0038459874146307507,6.153738220532735,0.0,20.64684294972618,2891.34988
+scan1_subset_uniform,scan1,subset_uniform,cosine_endpoints_K10,Cosine Endpoints-Dense K=10,cosine,10,0.0034460809159403047,6.004779656728108,0.0,8.658035090263493,2891.34988
+scan1_subset_uniform,scan1,subset_uniform,cosine_middle_K10,Cosine Middle-Dense K=10,cosine,10,0.003242791552717487,5.898815751075745,0.0,17.740214718274924,2891.34988
+scan1_subset_uniform,scan1,subset_uniform,piecewise_early_K10,Piecewise Early-Dense K=10,piecewise,10,0.0030538388527929783,5.891005833943685,0.0,6.953085297357319,2891.34988
+scan1_subset_uniform,scan1,subset_uniform,piecewise_late_K10,Piecewise Late-Dense K=10,piecewise,10,0.0037805282045155764,6.131457289059957,0.0,23.165602952050207,2891.34988
+scan1_subset_uniform,scan1,subset_uniform,piecewise_middle_K10,Piecewise Middle-Dense K=10,piecewise,10,0.003295346590069433,5.932041049003601,0.0,16.492934059275523,2891.34988
+scan1_subset_uniform,scan1,subset_uniform,piecewise_endpoints_K10,Piecewise Endpoints-Dense K=10,piecewise,10,0.0031801079555104175,5.905619064966838,0.0,5.0300025721601775,2891.34988
+scan1_subset_uniform,scan1,subset_uniform,random_K10_s42,Random Monotonic K=10 (seed=42),random,10,0.0035623502917587757,6.021273771921794,0.0,12.50842759176732,2891.34988
+scan1_subset_uniform,scan1,subset_uniform,random_K10_s123,Random Monotonic K=10 (seed=123),random,10,0.003325339911195139,5.963292479515076,0.0,5.7986673211309805,2891.34988
+scan1_subset_uniform,scan1,subset_uniform,random_K10_s999,Random Monotonic K=10 (seed=999),random,10,0.003102115821093321,5.840989549954732,0.0,5.144553871418904,2891.34988
+scan1_subset_uniform,scan1,subset_uniform,power_K12_g0.5,Power K=12 (gamma=0.5),power,12,0.0038926137688880167,6.197491685549418,0.0,6.413387210131233,3469.6198560000003
+scan1_subset_uniform,scan1,subset_uniform,power_K12_g0.75,Power K=12 (gamma=0.75),power,12,0.0034296892505759993,6.0020988782246905,0.0,14.672666278376285,3469.6198560000003
+scan1_subset_uniform,scan1,subset_uniform,power_K12_g1.25,Power K=12 (gamma=1.25),power,12,0.003171348595060408,5.902689774831136,0.0,17.269282637660456,3469.6198560000003
+scan1_subset_uniform,scan1,subset_uniform,power_K12_g1.5,Power K=12 (gamma=1.5),power,12,0.003090134783027073,5.8661108414332075,0.0,5.098445576635774,3469.6198560000003
+scan1_subset_uniform,scan1,subset_uniform,power_K12_g2.0,Power K=12 (gamma=2.0),power,12,0.0031284138094633818,5.888938466707866,0.0,26.481989137275434,3469.6198560000003
+scan1_subset_uniform,scan1,subset_uniform,cosine_late_K12,Cosine Late-Dense K=12,cosine,12,0.0030878272373229265,5.8824663162231445,0.0,26.265560363862814,3469.6198560000003
+scan1_subset_uniform,scan1,subset_uniform,cosine_early_K12,Cosine Early-Dense K=12,cosine,12,0.003771879283400873,6.157002806663513,0.0,11.189756639411135,3469.6198560000003
+scan1_subset_uniform,scan1,subset_uniform,cosine_endpoints_K12,Cosine Endpoints-Dense K=12,cosine,12,0.0034053270937874913,6.002665281295776,0.0,18.12550028212225,3469.6198560000003
+scan1_subset_uniform,scan1,subset_uniform,cosine_middle_K12,Cosine Middle-Dense K=12,cosine,12,0.0031675900875901184,5.873284498850505,0.0,16.233800168407626,3469.6198560000003
+scan1_subset_uniform,scan1,subset_uniform,piecewise_early_K12,Piecewise Early-Dense K=12,piecewise,12,0.0030963796113307276,5.890840848286946,0.0,9.27574085693505,3469.6198560000003
+scan1_subset_uniform,scan1,subset_uniform,piecewise_late_K12,Piecewise Late-Dense K=12,piecewise,12,0.0036010369270419082,6.087404529253642,0.0,11.981718781221403,3469.6198560000003
+scan1_subset_uniform,scan1,subset_uniform,piecewise_middle_K12,Piecewise Middle-Dense K=12,piecewise,12,0.0031752431532368064,5.885289629300435,0.0,16.478792828503146,3469.6198560000003
+scan1_subset_uniform,scan1,subset_uniform,piecewise_endpoints_K12,Piecewise Endpoints-Dense K=12,piecewise,12,0.003227366406160096,5.909947474797566,0.0,14.20055690615797,3469.6198560000003
+scan1_subset_uniform,scan1,subset_uniform,random_K12_s42,Random Monotonic K=12 (seed=42),random,12,0.0036829632396499314,6.095138311386108,0.0,9.395957220034397,3469.6198560000003
+scan1_subset_uniform,scan1,subset_uniform,random_K12_s123,Random Monotonic K=12 (seed=123),random,12,0.003273992372366289,5.953417857487996,0.0,17.902348290262708,3469.6198560000003
+scan1_subset_uniform,scan1,subset_uniform,random_K12_s999,Random Monotonic K=12 (seed=999),random,12,0.0034144646876181164,5.9866132736206055,0.0,12.032668097087438,3469.6198560000003
+scan4_subset_middle,scan4,subset_middle,uniform_K8,Uniform K=8,baseline,8,0.009567421240111193,20.72359053293864,0.0,12.995948992363083,2313.079904
+scan4_subset_middle,scan4,subset_middle,uniform_K10,Uniform K=10,baseline,10,0.0078425956889987,19.79574743906657,0.0,7.475366526708529,2891.34988
+scan4_subset_middle,scan4,subset_middle,uniform_K12,Uniform K=12,baseline,12,0.007921855198219419,19.58689832687378,0.0,14.313993506093283,3469.6198560000003
+scan4_subset_middle,scan4,subset_middle,uniform_K13,Uniform K=13,baseline,13,0.007977511500939727,19.547425746917725,0.0,29.45826907656154,3758.754844
+scan4_subset_middle,scan4,subset_middle,uniform_K14,Uniform K=14,baseline,14,0.00788796041160822,19.525880972544353,0.0,13.13303225860046,4047.8898320000003
+scan4_subset_middle,scan4,subset_middle,uniform_K16,Uniform K=16,baseline,16,0.007677942824860414,19.52498769760132,0.0,17.029278221240965,4626.159808
+scan4_subset_middle,scan4,subset_middle,power_K8_g0.5,Power K=8 (gamma=0.5),power,8,0.009333872391531864,20.444572766621906,0.0,6.861459305710851,2313.079904
+scan4_subset_middle,scan4,subset_middle,power_K8_g0.75,Power K=8 (gamma=0.75),power,8,0.009149256628006697,20.500480492909748,0.0,16.41517278246175,2313.079904
+scan4_subset_middle,scan4,subset_middle,power_K8_g1.25,Power K=8 (gamma=1.25),power,8,0.010348348800713817,21.031845092773438,0.0,20.636586780357174,2313.079904
+scan4_subset_middle,scan4,subset_middle,power_K8_g1.5,Power K=8 (gamma=1.5),power,8,0.011178666725754738,21.364298343658447,0.0,22.52277784847156,2313.079904
+scan4_subset_middle,scan4,subset_middle,power_K8_g2.0,Power K=8 (gamma=2.0),power,8,0.012859515224893888,22.138625780741375,0.0,27.670401996644088,2313.079904
+scan4_subset_middle,scan4,subset_middle,cosine_late_K8,Cosine Late-Dense K=8,cosine,8,0.012204629834741354,21.80677302678426,0.0,9.35253391886007,2313.079904
+scan4_subset_middle,scan4,subset_middle,cosine_early_K8,Cosine Early-Dense K=8,cosine,8,0.00898219745916625,20.285894870758057,0.0,23.92650452401863,2313.079904
+scan4_subset_middle,scan4,subset_middle,cosine_endpoints_K8,Cosine Endpoints-Dense K=8,cosine,8,0.00965291440176467,20.707053820292156,0.0,21.649084026653423,2313.079904
+scan4_subset_middle,scan4,subset_middle,cosine_middle_K8,Cosine Middle-Dense K=8,cosine,8,0.010390203601370255,21.135147094726562,0.0,23.82451807810965,2313.079904
+scan4_subset_middle,scan4,subset_middle,piecewise_early_K8,Piecewise Early-Dense K=8,piecewise,8,0.014369099245717129,22.967167536417644,0.0,23.180401606317144,2313.079904
+scan4_subset_middle,scan4,subset_middle,piecewise_late_K8,Piecewise Late-Dense K=8,piecewise,8,0.008994252110520998,20.288875738779705,0.0,4.0257629000618165,2313.079904
+scan4_subset_middle,scan4,subset_middle,piecewise_middle_K8,Piecewise Middle-Dense K=8,piecewise,8,0.010486542790507277,21.114963213602703,0.0,8.849200025579396,2313.079904
+scan4_subset_middle,scan4,subset_middle,piecewise_endpoints_K8,Piecewise Endpoints-Dense K=8,piecewise,8,0.010428682047252854,21.02922709782918,0.0,2.670829788604419,2313.079904
+scan4_subset_middle,scan4,subset_middle,random_K8_s42,Random Monotonic K=8 (seed=42),random,8,0.00914712157100439,20.462064107259113,0.0,17.220171585389558,2313.079904
+scan4_subset_middle,scan4,subset_middle,random_K8_s123,Random Monotonic K=8 (seed=123),random,8,0.017448720056563616,24.816775639851887,0.0,22.01099988481214,2313.079904
+scan4_subset_middle,scan4,subset_middle,random_K8_s999,Random Monotonic K=8 (seed=999),random,8,0.011077436152845621,21.308960278828938,0.0,11.416458960043856,2313.079904
+scan4_subset_middle,scan4,subset_middle,power_K10_g0.5,Power K=10 (gamma=0.5),power,10,0.008655227487906814,19.73456875483195,0.0,16.03978800470318,2891.34988
+scan4_subset_middle,scan4,subset_middle,power_K10_g0.75,Power K=10 (gamma=0.75),power,10,0.008118677341068784,19.75589593251546,0.0,4.903898915054871,2891.34988
+scan4_subset_middle,scan4,subset_middle,power_K10_g1.25,Power K=10 (gamma=1.25),power,10,0.007893407872567574,19.935272693634033,0.0,19.193000935082907,2891.34988
+scan4_subset_middle,scan4,subset_middle,power_K10_g1.5,Power K=10 (gamma=1.5),power,10,0.008287852785239616,20.132384459177654,0.0,15.256974527760171,2891.34988
+scan4_subset_middle,scan4,subset_middle,power_K10_g2.0,Power K=10 (gamma=2.0),power,10,0.009889149417479834,20.71686776479085,0.0,12.262098028863475,2891.34988
+scan4_subset_middle,scan4,subset_middle,cosine_late_K10,Cosine Late-Dense K=10,cosine,10,0.009184292207161585,20.44943634668986,0.0,13.592638097982475,2891.34988
+scan4_subset_middle,scan4,subset_middle,cosine_early_K10,Cosine Early-Dense K=10,cosine,10,0.008508306927978992,19.70144033432007,0.0,23.014902013942063,2891.34988
+scan4_subset_middle,scan4,subset_middle,cosine_endpoints_K10,Cosine Endpoints-Dense K=10,cosine,10,0.007972803277273973,19.882820288340252,0.0,8.979269701395378,2891.34988
+scan4_subset_middle,scan4,subset_middle,cosine_middle_K10,Cosine Middle-Dense K=10,cosine,10,0.007868701359257102,19.91426197687785,0.0,7.383606688256062,2891.34988
+scan4_subset_middle,scan4,subset_middle,piecewise_early_K10,Piecewise Early-Dense K=10,piecewise,10,0.010296491362775365,20.880876223246258,0.0,14.533495686762905,2891.34988
+scan4_subset_middle,scan4,subset_middle,piecewise_late_K10,Piecewise Late-Dense K=10,piecewise,10,0.008515842181319991,19.70116313298543,0.0,8.292190806114961,2891.34988
+scan4_subset_middle,scan4,subset_middle,piecewise_middle_K10,Piecewise Middle-Dense K=10,piecewise,10,0.00784892945860823,19.84343147277832,0.0,6.449163331903887,2891.34988
+scan4_subset_middle,scan4,subset_middle,piecewise_endpoints_K10,Piecewise Endpoints-Dense K=10,piecewise,10,0.008364927722141147,20.14993143081665,0.0,14.030978285679263,2891.34988
+scan4_subset_middle,scan4,subset_middle,random_K10_s42,Random Monotonic K=10 (seed=42),random,10,0.008076408334697286,19.737456798553467,0.0,3.3741406640212737,2891.34988
+scan4_subset_middle,scan4,subset_middle,random_K10_s123,Random Monotonic K=10 (seed=123),random,10,0.009932536709432801,20.722986221313477,0.0,11.831753351322556,2891.34988
+scan4_subset_middle,scan4,subset_middle,random_K10_s999,Random Monotonic K=10 (seed=999),random,10,0.008347623283043504,20.17292547225952,0.0,12.706348633602474,2891.34988
+scan4_subset_middle,scan4,subset_middle,power_K12_g0.5,Power K=12 (gamma=0.5),power,12,0.00859707104973495,19.564807415008545,0.0,20.98814679107368,3469.6198560000003
+scan4_subset_middle,scan4,subset_middle,power_K12_g0.75,Power K=12 (gamma=0.75),power,12,0.008193090713272492,19.541504859924316,0.0,15.150708754892774,3469.6198560000003
+scan4_subset_middle,scan4,subset_middle,power_K12_g1.25,Power K=12 (gamma=1.25),power,12,0.007740249236424764,19.690573692321777,0.0,8.717226158834533,3469.6198560000003
+scan4_subset_middle,scan4,subset_middle,power_K12_g1.5,Power K=12 (gamma=1.5),power,12,0.007791267397503058,19.782713572184246,0.0,23.017844793831188,3469.6198560000003
+scan4_subset_middle,scan4,subset_middle,power_K12_g2.0,Power K=12 (gamma=2.0),power,12,0.008881090053667625,20.298411687215168,0.0,6.723693963264871,3469.6198560000003
+scan4_subset_middle,scan4,subset_middle,cosine_late_K12,Cosine Late-Dense K=12,cosine,12,0.008172522764652967,19.991352558135986,0.0,11.59974893626405,3469.6198560000003
+scan4_subset_middle,scan4,subset_middle,cosine_early_K12,Cosine Early-Dense K=12,cosine,12,0.00844600711328288,19.57258176803589,0.0,15.290108753706207,3469.6198560000003
+scan4_subset_middle,scan4,subset_middle,cosine_endpoints_K12,Cosine Endpoints-Dense K=12,cosine,12,0.008017299075921377,19.710352738698322,0.0,19.71250850287476,3469.6198560000003
+scan4_subset_middle,scan4,subset_middle,cosine_middle_K12,Cosine Middle-Dense K=12,cosine,12,0.007872840777660409,19.564157168070476,0.0,16.771463339508728,3469.6198560000003
+scan4_subset_middle,scan4,subset_middle,piecewise_early_K12,Piecewise Early-Dense K=12,piecewise,12,0.008827687862018744,20.271848519643147,0.0,11.413295684217118,3469.6198560000003
+scan4_subset_middle,scan4,subset_middle,piecewise_late_K12,Piecewise Late-Dense K=12,piecewise,12,0.008370053954422474,19.572149117787678,0.0,23.414886714065688,3469.6198560000003
+scan4_subset_middle,scan4,subset_middle,piecewise_middle_K12,Piecewise Middle-Dense K=12,piecewise,12,0.007855541460836927,19.613006750742596,0.0,9.983718245658903,3469.6198560000003
+scan4_subset_middle,scan4,subset_middle,piecewise_endpoints_K12,Piecewise Endpoints-Dense K=12,piecewise,12,0.00779631834787627,19.69762913386027,0.0,9.531803973014691,3469.6198560000003
+scan4_subset_middle,scan4,subset_middle,random_K12_s42,Random Monotonic K=12 (seed=42),random,12,0.008219102397561073,19.551169554392498,0.0,14.370648555663315,3469.6198560000003
+scan4_subset_middle,scan4,subset_middle,random_K12_s123,Random Monotonic K=12 (seed=123),random,12,0.0082292635149012,20.02945025761922,0.0,8.149537538396388,3469.6198560000003
+scan4_subset_middle,scan4,subset_middle,random_K12_s999,Random Monotonic K=12 (seed=999),random,12,0.007863395847380161,19.68531608581543,0.0,15.182478170304421,3469.6198560000003
+scan4_subset_uniform,scan4,subset_uniform,uniform_K8,Uniform K=8,baseline,8,0.008234784084682664,16.019535223642986,0.0,30.65053195704017,2313.079904
+scan4_subset_uniform,scan4,subset_uniform,uniform_K10,Uniform K=10,baseline,10,0.00752299379867812,15.600635051727295,0.0,17.055517513515483,2891.34988
+scan4_subset_uniform,scan4,subset_uniform,uniform_K12,Uniform K=12,baseline,12,0.007155332947149873,15.393610636393229,0.0,16.85392421335829,3469.6198560000003
+scan4_subset_uniform,scan4,subset_uniform,uniform_K13,Uniform K=13,baseline,13,0.007092011083538334,15.353286107381185,0.0,12.878299055057417,3758.754844
+scan4_subset_uniform,scan4,subset_uniform,uniform_K14,Uniform K=14,baseline,14,0.007002368103712797,15.30146853129069,0.0,19.484815324564703,4047.8898320000003
+scan4_subset_uniform,scan4,subset_uniform,uniform_K16,Uniform K=16,baseline,16,0.007036554006238778,15.331679026285807,0.0,17.932847112619225,4626.159808
+scan4_subset_uniform,scan4,subset_uniform,power_K8_g0.5,Power K=8 (gamma=0.5),power,8,0.008710175985470414,15.916595935821533,0.0,21.230264439563253,2313.079904
+scan4_subset_uniform,scan4,subset_uniform,power_K8_g0.75,Power K=8 (gamma=0.75),power,8,0.008188983735938868,15.81402031580607,0.0,28.95018805951211,2313.079904
+scan4_subset_uniform,scan4,subset_uniform,power_K8_g1.25,Power K=8 (gamma=1.25),power,8,0.008793210300306479,16.446118990580242,0.0,7.676224069639113,2313.079904
+scan4_subset_uniform,scan4,subset_uniform,power_K8_g1.5,Power K=8 (gamma=1.5),power,8,0.009250203923632702,16.729684670766193,0.0,27.275233753824086,2313.079904
+scan4_subset_uniform,scan4,subset_uniform,power_K8_g2.0,Power K=8 (gamma=2.0),power,8,0.010416987662514051,17.511603037516277,0.0,5.806664343177679,2313.079904
+scan4_subset_uniform,scan4,subset_uniform,cosine_late_K8,Cosine Late-Dense K=8,cosine,8,0.009891855685661236,17.164122422536213,0.0,12.16484638036625,2313.079904
+scan4_subset_uniform,scan4,subset_uniform,cosine_early_K8,Cosine Early-Dense K=8,cosine,8,0.008523365249857306,15.755478541056315,0.0,30.816309861836974,2313.079904
+scan4_subset_uniform,scan4,subset_uniform,cosine_endpoints_K8,Cosine Endpoints-Dense K=8,cosine,8,0.00821514567360282,15.983059088389078,0.0,24.289982449997918,2313.079904
+scan4_subset_uniform,scan4,subset_uniform,cosine_middle_K8,Cosine Middle-Dense K=8,cosine,8,0.00856048745724062,16.278192202250164,0.0,8.692162557338284,2313.079904
+scan4_subset_uniform,scan4,subset_uniform,piecewise_early_K8,Piecewise Early-Dense K=8,piecewise,8,0.011664848619451126,18.42100477218628,0.0,20.232010236546696,2313.079904
+scan4_subset_uniform,scan4,subset_uniform,piecewise_late_K8,Piecewise Late-Dense K=8,piecewise,8,0.008518080925568938,15.763202826182047,0.0,27.493409525986447,2313.079904
+scan4_subset_uniform,scan4,subset_uniform,piecewise_middle_K8,Piecewise Middle-Dense K=8,piecewise,8,0.008669330039992929,16.358384609222412,0.0,21.044694247377336,2313.079904
+scan4_subset_uniform,scan4,subset_uniform,piecewise_endpoints_K8,Piecewise Endpoints-Dense K=8,piecewise,8,0.008554244802022973,16.255059560139973,0.0,11.953693768004902,2313.079904
+scan4_subset_uniform,scan4,subset_uniform,random_K8_s42,Random Monotonic K=8 (seed=42),random,8,0.008378896474217376,15.852732022603353,0.0,26.399057087094846,2313.079904
+scan4_subset_uniform,scan4,subset_uniform,random_K8_s123,Random Monotonic K=8 (seed=123),random,8,0.014388323606302341,20.561782042185467,1.1944405724589888,26.8285218085977,2313.079904
+scan4_subset_uniform,scan4,subset_uniform,random_K8_s999,Random Monotonic K=8 (seed=999),random,8,0.009037666876489917,16.59878126780192,0.0,27.62624236906072,2313.079904
+scan4_subset_uniform,scan4,subset_uniform,power_K10_g0.5,Power K=10 (gamma=0.5),power,10,0.00783218590853115,15.325472354888916,0.0,23.22742754768744,2891.34988
+scan4_subset_uniform,scan4,subset_uniform,power_K10_g0.75,Power K=10 (gamma=0.75),power,10,0.0074648702672372265,15.448014577229818,0.0,9.01152167678667,2891.34988
+scan4_subset_uniform,scan4,subset_uniform,power_K10_g1.25,Power K=10 (gamma=1.25),power,10,0.007697772312288483,15.732679526011148,0.0,10.909051499253506,2891.34988
+scan4_subset_uniform,scan4,subset_uniform,power_K10_g1.5,Power K=10 (gamma=1.5),power,10,0.007970408458883563,15.902124722798666,0.0,22.07087342979818,2891.34988
+scan4_subset_uniform,scan4,subset_uniform,power_K10_g2.0,Power K=10 (gamma=2.0),power,10,0.00860518643942972,16.26661554972331,0.0,27.876453355936462,2891.34988
+scan4_subset_uniform,scan4,subset_uniform,cosine_late_K10,Cosine Late-Dense K=10,cosine,10,0.008238642321278652,16.05161174138387,0.0,26.888222197616106,2891.34988
+scan4_subset_uniform,scan4,subset_uniform,cosine_early_K10,Cosine Early-Dense K=10,cosine,10,0.007691926633318265,15.373950958251953,0.0,10.535033737611242,2891.34988
+scan4_subset_uniform,scan4,subset_uniform,cosine_endpoints_K10,Cosine Endpoints-Dense K=10,cosine,10,0.007546473682547609,15.602373600006104,0.0,11.822826934407585,2891.34988
+scan4_subset_uniform,scan4,subset_uniform,cosine_middle_K10,Cosine Middle-Dense K=10,cosine,10,0.007726140242690842,15.730311870574951,0.0,11.95038473700849,2891.34988
+scan4_subset_uniform,scan4,subset_uniform,piecewise_early_K10,Piecewise Early-Dense K=10,piecewise,10,0.009334023421009382,16.734548727671307,0.0,4.79122402350762,2891.34988
+scan4_subset_uniform,scan4,subset_uniform,piecewise_late_K10,Piecewise Late-Dense K=10,piecewise,10,0.007636978290975094,15.341410001118978,0.0,11.548983679766588,2891.34988
+scan4_subset_uniform,scan4,subset_uniform,piecewise_middle_K10,Piecewise Middle-Dense K=10,piecewise,10,0.007599958141023914,15.649494806925455,0.0,12.295434937115738,2891.34988
+scan4_subset_uniform,scan4,subset_uniform,piecewise_endpoints_K10,Piecewise Endpoints-Dense K=10,piecewise,10,0.007825773442164063,15.795814355214437,0.0,25.346097230973015,2891.34988
+scan4_subset_uniform,scan4,subset_uniform,random_K10_s42,Random Monotonic K=10 (seed=42),random,10,0.007528328491995732,15.528950214385986,0.0,17.241913464899884,2891.34988
+scan4_subset_uniform,scan4,subset_uniform,random_K10_s123,Random Monotonic K=10 (seed=123),random,10,0.008185998148595294,15.95546038945516,0.0,24.6443537683555,2891.34988
+scan4_subset_uniform,scan4,subset_uniform,random_K10_s999,Random Monotonic K=10 (seed=999),random,10,0.0077652945183217525,15.77886931101481,0.0,6.522456437700854,2891.34988
+scan4_subset_uniform,scan4,subset_uniform,power_K12_g0.5,Power K=12 (gamma=0.5),power,12,0.007477349601686001,15.337159315745035,0.0,25.272915845015046,3469.6198560000003
+scan4_subset_uniform,scan4,subset_uniform,power_K12_g0.75,Power K=12 (gamma=0.75),power,12,0.007256792780632774,15.403288046518961,0.0,9.668333211303457,3469.6198560000003
+scan4_subset_uniform,scan4,subset_uniform,power_K12_g1.25,Power K=12 (gamma=1.25),power,12,0.007190506827707092,15.402685483296713,0.0,22.882493861002477,3469.6198560000003
+scan4_subset_uniform,scan4,subset_uniform,power_K12_g1.5,Power K=12 (gamma=1.5),power,12,0.007230229132498304,15.390554110209147,0.0,5.644255349147699,3469.6198560000003
+scan4_subset_uniform,scan4,subset_uniform,power_K12_g2.0,Power K=12 (gamma=2.0),power,12,0.007802535779774189,15.712254842122396,0.0,6.419453182953095,3469.6198560000003
+scan4_subset_uniform,scan4,subset_uniform,cosine_late_K12,Cosine Late-Dense K=12,cosine,12,0.007551701196158926,15.572203159332275,0.0,26.26619653195098,3469.6198560000003
+scan4_subset_uniform,scan4,subset_uniform,cosine_early_K12,Cosine Early-Dense K=12,cosine,12,0.007505239996438225,15.486592610677084,0.0,18.487643706531596,3469.6198560000003
+scan4_subset_uniform,scan4,subset_uniform,cosine_endpoints_K12,Cosine Endpoints-Dense K=12,cosine,12,0.007176667684689164,15.387052694956461,0.0,17.113069327792243,3469.6198560000003
+scan4_subset_uniform,scan4,subset_uniform,cosine_middle_K12,Cosine Middle-Dense K=12,cosine,12,0.007385397407536705,15.53488286336263,0.0,9.958059377168231,3469.6198560000003
+scan4_subset_uniform,scan4,subset_uniform,piecewise_early_K12,Piecewise Early-Dense K=12,piecewise,12,0.008057001046836376,15.846147219340006,0.0,5.696058563168642,3469.6198560000003
+scan4_subset_uniform,scan4,subset_uniform,piecewise_late_K12,Piecewise Late-Dense K=12,piecewise,12,0.0074609013584752875,15.47481075922648,0.0,24.977893045318442,3469.6198560000003
+scan4_subset_uniform,scan4,subset_uniform,piecewise_middle_K12,Piecewise Middle-Dense K=12,piecewise,12,0.007196818245574832,15.41195789972941,0.0,24.82509680438679,3469.6198560000003
+scan4_subset_uniform,scan4,subset_uniform,piecewise_endpoints_K12,Piecewise Endpoints-Dense K=12,piecewise,12,0.0070678233945121365,15.32992156346639,0.0,22.351173151982493,3469.6198560000003
+scan4_subset_uniform,scan4,subset_uniform,random_K12_s42,Random Monotonic K=12 (seed=42),random,12,0.007438513993596037,15.506533145904541,0.0,7.356906713951591,3469.6198560000003
+scan4_subset_uniform,scan4,subset_uniform,random_K12_s123,Random Monotonic K=12 (seed=123),random,12,0.007133832201361656,15.26145871480306,0.0,27.783496740275364,3469.6198560000003
+scan4_subset_uniform,scan4,subset_uniform,random_K12_s999,Random Monotonic K=12 (seed=999),random,12,0.007031975934902827,15.286972681681315,0.0,14.137184561195689,3469.6198560000003
+scan9_subset_middle,scan9,subset_middle,uniform_K8,Uniform K=8,baseline,8,0.016620477351049583,17.584745407104492,0.0,23.062193816868405,2313.079904
+scan9_subset_middle,scan9,subset_middle,uniform_K10,Uniform K=10,baseline,10,0.010701911523938179,12.638944943745932,0.0,15.641669191309534,2891.34988
+scan9_subset_middle,scan9,subset_middle,uniform_K12,Uniform K=12,baseline,12,0.008453296187023321,11.007460594177246,0.0,13.066993845345204,3469.6198560000003
+scan9_subset_middle,scan9,subset_middle,uniform_K13,Uniform K=13,baseline,13,0.00798434135504067,10.63983424504598,0.0,6.345174519990187,3758.754844
+scan9_subset_middle,scan9,subset_middle,uniform_K14,Uniform K=14,baseline,14,0.007873142138123512,10.589723587036133,0.0,15.913372159928038,4047.8898320000003
+scan9_subset_middle,scan9,subset_middle,uniform_K16,Uniform K=16,baseline,16,0.007746177725493908,10.47690725326538,0.0,14.493485861561048,4626.159808
+scan9_subset_middle,scan9,subset_middle,power_K8_g0.5,Power K=8 (gamma=0.5),power,8,0.014188056501249472,15.154128233591715,0.0,27.48894485899898,2313.079904
+scan9_subset_middle,scan9,subset_middle,power_K8_g0.75,Power K=8 (gamma=0.75),power,8,0.015352264201889435,16.347922643025715,0.0,8.933922083357155,2313.079904
+scan9_subset_middle,scan9,subset_middle,power_K8_g1.25,Power K=8 (gamma=1.25),power,8,0.018194889339307945,19.052131334940594,0.0,15.589360009681485,2313.079904
+scan9_subset_middle,scan9,subset_middle,power_K8_g1.5,Power K=8 (gamma=1.5),power,8,0.01951316340516011,20.235881487528484,0.0,22.40959823440376,2313.079904
+scan9_subset_middle,scan9,subset_middle,power_K8_g2.0,Power K=8 (gamma=2.0),power,8,0.021718290634453297,22.31054464975993,0.0,18.09124033783668,2313.079904
+scan9_subset_middle,scan9,subset_middle,cosine_late_K8,Cosine Late-Dense K=8,cosine,8,0.020607916948695976,21.210015614827473,0.0,21.124971168239785,2313.079904
+scan9_subset_middle,scan9,subset_middle,cosine_early_K8,Cosine Early-Dense K=8,cosine,8,0.01350383289779226,14.588501453399658,0.0,7.250170885331077,2313.079904
+scan9_subset_middle,scan9,subset_middle,cosine_endpoints_K8,Cosine Endpoints-Dense K=8,cosine,8,0.015990618461122114,16.94201946258545,0.0,18.736555116515607,2313.079904
+scan9_subset_middle,scan9,subset_middle,cosine_middle_K8,Cosine Middle-Dense K=8,cosine,8,0.018203895073384047,19.028241634368896,0.0,23.50379448607895,2313.079904
+scan9_subset_middle,scan9,subset_middle,piecewise_early_K8,Piecewise Early-Dense K=8,piecewise,8,0.023358610769112904,23.895153045654297,0.0,21.067695656459293,2313.079904
+scan9_subset_middle,scan9,subset_middle,piecewise_late_K8,Piecewise Late-Dense K=8,piecewise,8,0.013966648373752832,14.97258472442627,0.0,24.104018010043887,2313.079904
+scan9_subset_middle,scan9,subset_middle,piecewise_middle_K8,Piecewise Middle-Dense K=8,piecewise,8,0.01843418274074793,19.29312817255656,0.0,20.993043787691267,2313.079904
+scan9_subset_middle,scan9,subset_middle,piecewise_endpoints_K8,Piecewise Endpoints-Dense K=8,piecewise,8,0.017730960622429848,18.51319932937622,0.0,16.05687603521559,2313.079904
+scan9_subset_middle,scan9,subset_middle,random_K8_s42,Random Monotonic K=8 (seed=42),random,8,0.015228949797650179,16.12645943959554,0.0,16.76636229988316,2313.079904
+scan9_subset_middle,scan9,subset_middle,random_K8_s123,Random Monotonic K=8 (seed=123),random,8,0.026198769609133404,26.552306811014812,0.0,19.20058260514418,2313.079904
+scan9_subset_middle,scan9,subset_middle,random_K8_s999,Random Monotonic K=8 (seed=999),random,8,0.018519431352615356,19.42377805709839,0.0,25.82709469812045,2313.079904
+scan9_subset_middle,scan9,subset_middle,power_K10_g0.5,Power K=10 (gamma=0.5),power,10,0.008998918191840252,11.10379441579183,0.0,16.22258915993699,2891.34988
+scan9_subset_middle,scan9,subset_middle,power_K10_g0.75,Power K=10 (gamma=0.75),power,10,0.009725394813964764,11.79225222269694,0.0,27.048433942913125,2891.34988
+scan9_subset_middle,scan9,subset_middle,power_K10_g1.25,Power K=10 (gamma=1.25),power,10,0.01194643679385384,13.60082197189331,0.0,24.508229921359614,2891.34988
+scan9_subset_middle,scan9,subset_middle,power_K10_g1.5,Power K=10 (gamma=1.5),power,10,0.013276968306551376,14.751524130503336,0.0,11.512265952383821,2891.34988
+scan9_subset_middle,scan9,subset_middle,power_K10_g2.0,Power K=10 (gamma=2.0),power,10,0.01622194688146313,17.23084783554077,0.0,24.022128132894156,2891.34988
+scan9_subset_middle,scan9,subset_middle,cosine_late_K10,Cosine Late-Dense K=10,cosine,10,0.014716605034967264,15.963171323140463,0.0,10.606894460247112,2891.34988
+scan9_subset_middle,scan9,subset_middle,cosine_early_K10,Cosine Early-Dense K=10,cosine,10,0.008635958501448235,10.921586513519287,0.0,17.452512031525668,2891.34988
+scan9_subset_middle,scan9,subset_middle,cosine_endpoints_K10,Cosine Endpoints-Dense K=10,cosine,10,0.010051250457763672,12.140771865844727,0.0,25.051626760571196,2891.34988
+scan9_subset_middle,scan9,subset_middle,cosine_middle_K10,Cosine Middle-Dense K=10,cosine,10,0.012123391342659792,13.784382343292236,0.0,22.0380605962691,2891.34988
+scan9_subset_middle,scan9,subset_middle,piecewise_early_K10,Piecewise Early-Dense K=10,piecewise,10,0.01690054622789224,17.886528809865315,0.0,25.084684351439012,2891.34988
+scan9_subset_middle,scan9,subset_middle,piecewise_late_K10,Piecewise Late-Dense K=10,piecewise,10,0.009110928668330113,11.264207522074381,0.0,8.382969320695818,2891.34988
+scan9_subset_middle,scan9,subset_middle,piecewise_middle_K10,Piecewise Middle-Dense K=10,piecewise,10,0.011072856839746237,12.929202556610107,0.0,25.182037545639286,2891.34988
+scan9_subset_middle,scan9,subset_middle,piecewise_endpoints_K10,Piecewise Endpoints-Dense K=10,piecewise,10,0.01243560528382659,14.010143597920736,0.0,14.461571838238065,2891.34988
+scan9_subset_middle,scan9,subset_middle,random_K10_s42,Random Monotonic K=10 (seed=42),random,10,0.010015948209911585,12.020326296488443,0.0,20.616238099354973,2891.34988
+scan9_subset_middle,scan9,subset_middle,random_K10_s123,Random Monotonic K=10 (seed=123),random,10,0.013673631319155296,14.89217217763265,0.0,23.91368698035001,2891.34988
+scan9_subset_middle,scan9,subset_middle,random_K10_s999,Random Monotonic K=10 (seed=999),random,10,0.013005938691397509,14.425147692362467,0.0,22.200280737347228,2891.34988
+scan9_subset_middle,scan9,subset_middle,power_K12_g0.5,Power K=12 (gamma=0.5),power,12,0.007719104566300909,10.192068576812744,0.0,16.744133191318564,3469.6198560000003
+scan9_subset_middle,scan9,subset_middle,power_K12_g0.75,Power K=12 (gamma=0.75),power,12,0.007938264248271784,10.561942100524902,0.0,18.835244413111415,3469.6198560000003
+scan9_subset_middle,scan9,subset_middle,power_K12_g1.25,Power K=12 (gamma=1.25),power,12,0.009157024013499418,11.584461371103922,0.0,12.476061815463765,3469.6198560000003
+scan9_subset_middle,scan9,subset_middle,power_K12_g1.5,Power K=12 (gamma=1.5),power,12,0.010074402826527754,12.287180105845133,0.0,17.12358854837905,3469.6198560000003
+scan9_subset_middle,scan9,subset_middle,power_K12_g2.0,Power K=12 (gamma=2.0),power,12,0.013485415993879238,14.942520459493002,0.0,15.067413317303997,3469.6198560000003
+scan9_subset_middle,scan9,subset_middle,cosine_late_K12,Cosine Late-Dense K=12,cosine,12,0.011651714642842611,13.487328688303629,0.0,26.89658933943193,3469.6198560000003
+scan9_subset_middle,scan9,subset_middle,cosine_early_K12,Cosine Early-Dense K=12,cosine,12,0.007618286802122991,10.238355000813803,0.0,21.469767192817766,3469.6198560000003
+scan9_subset_middle,scan9,subset_middle,cosine_endpoints_K12,Cosine Endpoints-Dense K=12,cosine,12,0.008146270178258419,10.87580426534017,0.0,20.690538426824155,3469.6198560000003
+scan9_subset_middle,scan9,subset_middle,cosine_middle_K12,Cosine Middle-Dense K=12,cosine,12,0.00899849645793438,11.3457932472229,0.0,19.104968476713513,3469.6198560000003
+scan9_subset_middle,scan9,subset_middle,piecewise_early_K12,Piecewise Early-Dense K=12,piecewise,12,0.013058409870912632,14.656970818837484,0.0,21.132816316405684,3469.6198560000003
+scan9_subset_middle,scan9,subset_middle,piecewise_late_K12,Piecewise Late-Dense K=12,piecewise,12,0.007771026498327653,10.405553340911865,0.0,20.195601272845707,3469.6198560000003
+scan9_subset_middle,scan9,subset_middle,piecewise_middle_K12,Piecewise Middle-Dense K=12,piecewise,12,0.008980415295809507,11.385409673055014,0.0,12.374088229520334,3469.6198560000003
+scan9_subset_middle,scan9,subset_middle,piecewise_endpoints_K12,Piecewise Endpoints-Dense K=12,piecewise,12,0.008739143454780182,11.255167007446289,0.0,22.46321255134572,3469.6198560000003
+scan9_subset_middle,scan9,subset_middle,random_K12_s42,Random Monotonic K=12 (seed=42),random,12,0.007607983813310663,10.25401496887207,0.0,19.04442644474941,3469.6198560000003
+scan9_subset_middle,scan9,subset_middle,random_K12_s123,Random Monotonic K=12 (seed=123),random,12,0.010459382086992264,12.482921600341797,0.0,23.35063967800282,3469.6198560000003
+scan9_subset_middle,scan9,subset_middle,random_K12_s999,Random Monotonic K=12 (seed=999),random,12,0.008304808754473925,10.93324359258016,0.0,13.345236146464822,3469.6198560000003
+scan9_subset_uniform,scan9,subset_uniform,uniform_K8,Uniform K=8,baseline,8,0.011966117502500614,12.4212752978007,0.0,20.247550304290648,2313.079904
+scan9_subset_uniform,scan9,subset_uniform,uniform_K10,Uniform K=10,baseline,10,0.007864999041582147,10.167720476786295,0.0,17.51132269057645,2891.34988
+scan9_subset_uniform,scan9,subset_uniform,uniform_K12,Uniform K=12,baseline,12,0.006805015339826544,9.570566495259603,0.0,19.153846113050285,3469.6198560000003
+scan9_subset_uniform,scan9,subset_uniform,uniform_K13,Uniform K=13,baseline,13,0.006658850392947595,9.554560025533041,0.0,19.78189411792319,3758.754844
+scan9_subset_uniform,scan9,subset_uniform,uniform_K14,Uniform K=14,baseline,14,0.006548053352162242,9.532190481821695,0.0,4.25144669541499,4047.8898320000003
+scan9_subset_uniform,scan9,subset_uniform,uniform_K16,Uniform K=16,baseline,16,0.006648048292845488,9.600174029668173,0.0,2.191760747106548,4626.159808
+scan9_subset_uniform,scan9,subset_uniform,power_K8_g0.5,Power K=8 (gamma=0.5),power,8,0.011499801805863777,11.859063943227133,0.0,12.55601576087062,2313.079904
+scan9_subset_uniform,scan9,subset_uniform,power_K8_g0.75,Power K=8 (gamma=0.75),power,8,0.011618245858699083,12.077746391296387,0.0,21.13694482780689,2313.079904
+scan9_subset_uniform,scan9,subset_uniform,power_K8_g1.25,Power K=8 (gamma=1.25),power,8,0.012596491103370985,12.952390352884928,0.0,23.782303613696715,2313.079904
+scan9_subset_uniform,scan9,subset_uniform,power_K8_g1.5,Power K=8 (gamma=1.5),power,8,0.01303165111069878,13.351511160532633,0.0,28.690146073649718,2313.079904
+scan9_subset_uniform,scan9,subset_uniform,power_K8_g2.0,Power K=8 (gamma=2.0),power,8,0.013956525673468908,14.282050291697184,0.0,6.113400801685679,2313.079904
+scan9_subset_uniform,scan9,subset_uniform,cosine_late_K8,Cosine Late-Dense K=8,cosine,8,0.013386734916518131,13.765185038248697,0.0,24.446428573267294,2313.079904
+scan9_subset_uniform,scan9,subset_uniform,cosine_early_K8,Cosine Early-Dense K=8,cosine,8,0.010428551429261764,11.238026777903238,0.0,19.03615869641557,2313.079904
+scan9_subset_uniform,scan9,subset_uniform,cosine_endpoints_K8,Cosine Endpoints-Dense K=8,cosine,8,0.011069861706346273,11.884869257609049,0.0,12.27845921341171,2313.079904
+scan9_subset_uniform,scan9,subset_uniform,cosine_middle_K8,Cosine Middle-Dense K=8,cosine,8,0.01348219501475493,13.362690448760986,0.0,13.376909979248735,2313.079904
+scan9_subset_uniform,scan9,subset_uniform,piecewise_early_K8,Piecewise Early-Dense K=8,piecewise,8,0.015255420003086329,15.165706793467203,0.0,5.35378074396028,2313.079904
+scan9_subset_uniform,scan9,subset_uniform,piecewise_late_K8,Piecewise Late-Dense K=8,piecewise,8,0.010779280525942644,11.425676504770914,0.0,26.066632740685677,2313.079904
+scan9_subset_uniform,scan9,subset_uniform,piecewise_middle_K8,Piecewise Middle-Dense K=8,piecewise,8,0.013173150674750408,13.306001663208008,1.1944405724589888,21.537702673328045,2313.079904
+scan9_subset_uniform,scan9,subset_uniform,piecewise_endpoints_K8,Piecewise Endpoints-Dense K=8,piecewise,8,0.01176918065175414,12.48791774113973,0.0,12.053328209814062,2313.079904
+scan9_subset_uniform,scan9,subset_uniform,random_K8_s42,Random Monotonic K=8 (seed=42),random,8,0.011736124288290739,12.078591187795004,0.0,16.89677262249052,2313.079904
+scan9_subset_uniform,scan9,subset_uniform,random_K8_s123,Random Monotonic K=8 (seed=123),random,8,0.017681423885126907,17.261593023935955,0.0,4.806776631052004,2313.079904
+scan9_subset_uniform,scan9,subset_uniform,random_K8_s999,Random Monotonic K=8 (seed=999),random,8,0.012425888795405626,12.8254763285319,0.0,14.043576569603353,2313.079904
+scan9_subset_uniform,scan9,subset_uniform,power_K10_g0.5,Power K=10 (gamma=0.5),power,10,0.0076583675884952145,9.625337680180868,0.0,13.800436171433374,2891.34988
+scan9_subset_uniform,scan9,subset_uniform,power_K10_g0.75,Power K=10 (gamma=0.75),power,10,0.00763487652875483,9.80045199394226,0.0,14.797582354126606,2891.34988
+scan9_subset_uniform,scan9,subset_uniform,power_K10_g1.25,Power K=10 (gamma=1.25),power,10,0.008272118167951703,10.530059496561686,0.0,6.918798797153962,2891.34988
+scan9_subset_uniform,scan9,subset_uniform,power_K10_g1.5,Power K=10 (gamma=1.5),power,10,0.008649265471224984,10.86762555440267,0.0,27.312442934661973,2891.34988
+scan9_subset_uniform,scan9,subset_uniform,power_K10_g2.0,Power K=10 (gamma=2.0),power,10,0.010203717198843757,12.028698921203613,0.0,26.928126563985703,2891.34988
+scan9_subset_uniform,scan9,subset_uniform,cosine_late_K10,Cosine Late-Dense K=10,cosine,10,0.009441858700787028,11.446958700815836,0.0,28.0920697548312,2891.34988
+scan9_subset_uniform,scan9,subset_uniform,cosine_early_K10,Cosine Early-Dense K=10,cosine,10,0.007280696105832855,9.481969436009726,0.0,22.37955948932087,2891.34988
+scan9_subset_uniform,scan9,subset_uniform,cosine_endpoints_K10,Cosine Endpoints-Dense K=10,cosine,10,0.007501706248149276,9.99598741531372,0.0,12.410053906829411,2891.34988
+scan9_subset_uniform,scan9,subset_uniform,cosine_middle_K10,Cosine Middle-Dense K=10,cosine,10,0.008972329553216696,10.734854221343994,0.0,27.10872010958762,2891.34988
+scan9_subset_uniform,scan9,subset_uniform,piecewise_early_K10,Piecewise Early-Dense K=10,piecewise,10,0.010669512984653315,12.251946449279785,0.0,28.958990857117882,2891.34988
+scan9_subset_uniform,scan9,subset_uniform,piecewise_late_K10,Piecewise Late-Dense K=10,piecewise,10,0.007528091237569849,9.647221406300863,0.0,24.792212040428016,2891.34988
+scan9_subset_uniform,scan9,subset_uniform,piecewise_middle_K10,Piecewise Middle-Dense K=10,piecewise,10,0.00798549666069448,10.20628833770752,0.0,5.323317068618867,2891.34988
+scan9_subset_uniform,scan9,subset_uniform,piecewise_endpoints_K10,Piecewise Endpoints-Dense K=10,piecewise,10,0.008231737728541097,10.546153545379639,0.0,5.611634081080504,2891.34988
+scan9_subset_uniform,scan9,subset_uniform,random_K10_s42,Random Monotonic K=10 (seed=42),random,10,0.007680870747814576,9.850631157557169,0.0,16.0214564884489,2891.34988
+scan9_subset_uniform,scan9,subset_uniform,random_K10_s123,Random Monotonic K=10 (seed=123),random,10,0.008240865776315331,10.730643590291342,0.0,27.223744123748627,2891.34988
+scan9_subset_uniform,scan9,subset_uniform,random_K10_s999,Random Monotonic K=10 (seed=999),random,10,0.00859220737280945,10.761736392974854,0.0,5.573980777864006,2891.34988
+scan9_subset_uniform,scan9,subset_uniform,power_K12_g0.5,Power K=12 (gamma=0.5),power,12,0.006731501314789057,9.081533511479696,0.0,14.866434396220038,3469.6198560000003
+scan9_subset_uniform,scan9,subset_uniform,power_K12_g0.75,Power K=12 (gamma=0.75),power,12,0.00663643943456312,9.264612992604574,0.0,17.63938607836502,3469.6198560000003
+scan9_subset_uniform,scan9,subset_uniform,power_K12_g1.25,Power K=12 (gamma=1.25),power,12,0.007156417239457369,9.988123893737793,0.0,24.710052655397288,3469.6198560000003
+scan9_subset_uniform,scan9,subset_uniform,power_K12_g1.5,Power K=12 (gamma=1.5),power,12,0.00731942771623532,10.16080649693807,0.0,26.267406222486013,3469.6198560000003
+scan9_subset_uniform,scan9,subset_uniform,power_K12_g2.0,Power K=12 (gamma=2.0),power,12,0.008577140280976892,11.123054345448812,0.0,13.119050292187017,3469.6198560000003
+scan9_subset_uniform,scan9,subset_uniform,cosine_late_K12,Cosine Late-Dense K=12,cosine,12,0.007949062002201876,10.68069076538086,0.0,5.635204779315003,3469.6198560000003
+scan9_subset_uniform,scan9,subset_uniform,cosine_early_K12,Cosine Early-Dense K=12,cosine,12,0.006689077087988456,9.188930749893188,0.0,8.682612316479117,3469.6198560000003
+scan9_subset_uniform,scan9,subset_uniform,cosine_endpoints_K12,Cosine Endpoints-Dense K=12,cosine,12,0.006737865740433335,9.67435352007548,0.0,12.556980560664785,3469.6198560000003
+scan9_subset_uniform,scan9,subset_uniform,cosine_middle_K12,Cosine Middle-Dense K=12,cosine,12,0.0071535873382041855,9.670044819513956,0.0,26.004215052508783,3469.6198560000003
+scan9_subset_uniform,scan9,subset_uniform,piecewise_early_K12,Piecewise Early-Dense K=12,piecewise,12,0.008487922605127096,10.992404778798422,0.0,12.387634095470057,3469.6198560000003
+scan9_subset_uniform,scan9,subset_uniform,piecewise_late_K12,Piecewise Late-Dense K=12,piecewise,12,0.006733728262285392,9.253999392191568,0.0,6.46822116051381,3469.6198560000003
+scan9_subset_uniform,scan9,subset_uniform,piecewise_middle_K12,Piecewise Middle-Dense K=12,piecewise,12,0.006992164611195524,9.771518548329672,0.0,27.037843734605023,3469.6198560000003
+scan9_subset_uniform,scan9,subset_uniform,piecewise_endpoints_K12,Piecewise Endpoints-Dense K=12,piecewise,12,0.006855837923164169,9.723172028859457,0.0,21.973375841129975,3469.6198560000003
+scan9_subset_uniform,scan9,subset_uniform,random_K12_s42,Random Monotonic K=12 (seed=42),random,12,0.006566912867128849,9.138400793075562,0.0,19.08421092706951,3469.6198560000003
+scan9_subset_uniform,scan9,subset_uniform,random_K12_s123,Random Monotonic K=12 (seed=123),random,12,0.007162296290819843,10.111624717712402,0.0,7.474614192043622,3469.6198560000003
+scan9_subset_uniform,scan9,subset_uniform,random_K12_s999,Random Monotonic K=12 (seed=999),random,12,0.0067768727118770284,9.651020685831705,0.0,20.342540982303092,3469.6198560000003
+scan24_subset_middle,scan24,subset_middle,uniform_K8,Uniform K=8,baseline,8,0.006312659553562601,7.868866443634033,0.0,23.576639378498587,2313.079904
+scan24_subset_middle,scan24,subset_middle,uniform_K10,Uniform K=10,baseline,10,0.005627945919210712,7.637831370035808,0.0,14.02685740488002,2891.34988
+scan24_subset_middle,scan24,subset_middle,uniform_K12,Uniform K=12,baseline,12,0.005381655724098285,7.548745950063069,0.0,17.16020396521987,3469.6198560000003
+scan24_subset_middle,scan24,subset_middle,uniform_K13,Uniform K=13,baseline,13,0.0053871806400517626,7.516368230183919,0.0,8.980709092615154,3758.754844
+scan24_subset_middle,scan24,subset_middle,uniform_K14,Uniform K=14,baseline,14,0.005355049002294739,7.517149845759074,0.0,6.814813346973994,4047.8898320000003
+scan24_subset_middle,scan24,subset_middle,uniform_K16,Uniform K=16,baseline,16,0.005433911612878243,7.524006207784017,0.0,8.337757559389056,4626.159808
+scan24_subset_middle,scan24,subset_middle,power_K8_g0.5,Power K=8 (gamma=0.5),power,8,0.006899415515363216,8.130690892537435,0.0,17.86634931578143,2313.079904
+scan24_subset_middle,scan24,subset_middle,power_K8_g0.75,Power K=8 (gamma=0.75),power,8,0.00659988805030783,7.980471054712932,0.0,20.62711381490647,2313.079904
+scan24_subset_middle,scan24,subset_middle,power_K8_g1.25,Power K=8 (gamma=1.25),power,8,0.006084769265726209,7.798171838124593,0.0,21.67044859157296,2313.079904
+scan24_subset_middle,scan24,subset_middle,power_K8_g1.5,Power K=8 (gamma=1.5),power,8,0.006047881596411268,7.795257170995076,0.0,6.894475959911017,2313.079904
+scan24_subset_middle,scan24,subset_middle,power_K8_g2.0,Power K=8 (gamma=2.0),power,8,0.005985568976029754,7.780432939529419,0.0,20.078650255991203,2313.079904
+scan24_subset_middle,scan24,subset_middle,cosine_late_K8,Cosine Late-Dense K=8,cosine,8,0.005997822076703112,7.774132966995239,0.0,23.623845746252716,2313.079904
+scan24_subset_middle,scan24,subset_middle,cosine_early_K8,Cosine Early-Dense K=8,cosine,8,0.006985241935277979,8.17566712697347,0.0,17.126344480795037,2313.079904
+scan24_subset_middle,scan24,subset_middle,cosine_endpoints_K8,Cosine Endpoints-Dense K=8,cosine,8,0.006459504598751664,7.941413005193074,0.0,13.729668545868968,2313.079904
+scan24_subset_middle,scan24,subset_middle,cosine_middle_K8,Cosine Middle-Dense K=8,cosine,8,0.006187297869473696,7.779412587483724,0.0,22.621350284799533,2313.079904
+scan24_subset_middle,scan24,subset_middle,piecewise_early_K8,Piecewise Early-Dense K=8,piecewise,8,0.0059745945036411285,7.718001047770183,0.0,9.892485630219946,2313.079904
+scan24_subset_middle,scan24,subset_middle,piecewise_late_K8,Piecewise Late-Dense K=8,piecewise,8,0.006875363877043128,8.11637290318807,0.0,18.72445254157466,2313.079904
+scan24_subset_middle,scan24,subset_middle,piecewise_middle_K8,Piecewise Middle-Dense K=8,piecewise,8,0.006111150219415625,7.783318678538005,0.0,20.59757105005772,2313.079904
+scan24_subset_middle,scan24,subset_middle,piecewise_endpoints_K8,Piecewise Endpoints-Dense K=8,piecewise,8,0.006187456737582882,7.857397238413493,0.0,10.78542888168378,2313.079904
+scan24_subset_middle,scan24,subset_middle,random_K8_s42,Random Monotonic K=8 (seed=42),random,8,0.0066560091606030864,8.015024582544962,0.0,8.416686869698703,2313.079904
+scan24_subset_middle,scan24,subset_middle,random_K8_s123,Random Monotonic K=8 (seed=123),random,8,0.006115752815579374,7.8031143347422285,0.0,21.031074156481242,2313.079904
+scan24_subset_middle,scan24,subset_middle,random_K8_s999,Random Monotonic K=8 (seed=999),random,8,0.006019922361398737,7.73988922437032,0.0,23.16557011733873,2313.079904
+scan24_subset_middle,scan24,subset_middle,power_K10_g0.5,Power K=10 (gamma=0.5),power,10,0.006397182509923975,7.948743184407552,0.0,24.974049391936916,2891.34988
+scan24_subset_middle,scan24,subset_middle,power_K10_g0.75,Power K=10 (gamma=0.75),power,10,0.005957501552378138,7.751957098642985,0.0,9.02297867878913,2891.34988
+scan24_subset_middle,scan24,subset_middle,power_K10_g1.25,Power K=10 (gamma=1.25),power,10,0.005478068953379989,7.594497760136922,0.0,21.432949235966323,2891.34988
+scan24_subset_middle,scan24,subset_middle,power_K10_g1.5,Power K=10 (gamma=1.5),power,10,0.005486203357577324,7.648745616277059,0.0,15.905897531737663,2891.34988
+scan24_subset_middle,scan24,subset_middle,power_K10_g2.0,Power K=10 (gamma=2.0),power,10,0.00553853577002883,7.72430698076884,0.0,20.15400707498677,2891.34988
+scan24_subset_middle,scan24,subset_middle,cosine_late_K10,Cosine Late-Dense K=10,cosine,10,0.005525199153150122,7.69052259127299,0.0,25.894233216505857,2891.34988
+scan24_subset_middle,scan24,subset_middle,cosine_early_K10,Cosine Early-Dense K=10,cosine,10,0.006201715208590031,7.879876057306926,0.0,6.176005390696567,2891.34988
+scan24_subset_middle,scan24,subset_middle,cosine_endpoints_K10,Cosine Endpoints-Dense K=10,cosine,10,0.0056232545369615155,7.644116401672363,0.0,14.244389538434817,2891.34988
+scan24_subset_middle,scan24,subset_middle,cosine_middle_K10,Cosine Middle-Dense K=10,cosine,10,0.005624222879608472,7.54865304629008,0.0,15.113600123688679,2891.34988
+scan24_subset_middle,scan24,subset_middle,piecewise_early_K10,Piecewise Early-Dense K=10,piecewise,10,0.005549820838496089,7.723577896753947,0.0,9.243225421226086,2891.34988
+scan24_subset_middle,scan24,subset_middle,piecewise_late_K10,Piecewise Late-Dense K=10,piecewise,10,0.006148709605137507,7.847960392634074,0.0,22.911117609668835,2891.34988
+scan24_subset_middle,scan24,subset_middle,piecewise_middle_K10,Piecewise Middle-Dense K=10,piecewise,10,0.005635391998415192,7.650579849878947,0.0,21.430710961630968,2891.34988
+scan24_subset_middle,scan24,subset_middle,piecewise_endpoints_K10,Piecewise Endpoints-Dense K=10,piecewise,10,0.005469010366747777,7.630648056666057,0.0,7.834023655368161,2891.34988
+scan24_subset_middle,scan24,subset_middle,random_K10_s42,Random Monotonic K=10 (seed=42),random,10,0.005934157874435186,7.722475131352742,0.0,7.806020395592686,2891.34988
+scan24_subset_middle,scan24,subset_middle,random_K10_s123,Random Monotonic K=10 (seed=123),random,10,0.005934208321074645,7.89929993947347,0.0,21.89051495654019,2891.34988
+scan24_subset_middle,scan24,subset_middle,random_K10_s999,Random Monotonic K=10 (seed=999),random,10,0.005501852370798588,7.665839831034343,0.0,25.744380249051215,2891.34988
+scan24_subset_middle,scan24,subset_middle,power_K12_g0.5,Power K=12 (gamma=0.5),power,12,0.005996863512943189,7.772389491399129,0.0,20.51126314330595,3469.6198560000003
+scan24_subset_middle,scan24,subset_middle,power_K12_g0.75,Power K=12 (gamma=0.75),power,12,0.0056222845645000534,7.627071221669515,0.0,9.648975476913337,3469.6198560000003
+scan24_subset_middle,scan24,subset_middle,power_K12_g1.25,Power K=12 (gamma=1.25),power,12,0.005283258195656042,7.573619842529297,0.0,15.5103893980717,3469.6198560000003
+scan24_subset_middle,scan24,subset_middle,power_K12_g1.5,Power K=12 (gamma=1.5),power,12,0.005284973691838483,7.6248665650685625,0.0,24.35697630711113,3469.6198560000003
+scan24_subset_middle,scan24,subset_middle,power_K12_g2.0,Power K=12 (gamma=2.0),power,12,0.005599495644370715,7.807576338450114,0.0,20.02045743557562,3469.6198560000003
+scan24_subset_middle,scan24,subset_middle,cosine_late_K12,Cosine Late-Dense K=12,cosine,12,0.005468254559673369,7.76792558034261,0.0,6.076148736509018,3469.6198560000003
+scan24_subset_middle,scan24,subset_middle,cosine_early_K12,Cosine Early-Dense K=12,cosine,12,0.0058966251866271096,7.781245946884155,0.0,15.177705842426137,3469.6198560000003
+scan24_subset_middle,scan24,subset_middle,cosine_endpoints_K12,Cosine Endpoints-Dense K=12,cosine,12,0.005443003727123141,7.607649167378743,0.0,12.595565259781539,3469.6198560000003
+scan24_subset_middle,scan24,subset_middle,cosine_middle_K12,Cosine Middle-Dense K=12,cosine,12,0.005453936445216338,7.514174620310466,0.0,14.770987954269579,3469.6198560000003
+scan24_subset_middle,scan24,subset_middle,piecewise_early_K12,Piecewise Early-Dense K=12,piecewise,12,0.005592040019109845,7.810779889424642,0.0,7.129019782384692,3469.6198560000003
+scan24_subset_middle,scan24,subset_middle,piecewise_late_K12,Piecewise Late-Dense K=12,piecewise,12,0.0058285684790462255,7.7279588381449384,0.0,5.29534219681713,3469.6198560000003
+scan24_subset_middle,scan24,subset_middle,piecewise_middle_K12,Piecewise Middle-Dense K=12,piecewise,12,0.005308957149585088,7.519340991973877,0.0,8.988442663237656,3469.6198560000003
+scan24_subset_middle,scan24,subset_middle,piecewise_endpoints_K12,Piecewise Endpoints-Dense K=12,piecewise,12,0.005350256726766626,7.599700689315796,0.0,13.991829171034531,3469.6198560000003
+scan24_subset_middle,scan24,subset_middle,random_K12_s42,Random Monotonic K=12 (seed=42),random,12,0.005792131337026755,7.706818580627441,0.0,16.139396175185766,3469.6198560000003
+scan24_subset_middle,scan24,subset_middle,random_K12_s123,Random Monotonic K=12 (seed=123),random,12,0.005440935802956422,7.7029093106587725,0.0,24.81810998332659,3469.6198560000003
+scan24_subset_middle,scan24,subset_middle,random_K12_s999,Random Monotonic K=12 (seed=999),random,12,0.00541450393696626,7.603271881739299,0.0,7.924364166281539,3469.6198560000003
+scan24_subset_uniform,scan24,subset_uniform,uniform_K8,Uniform K=8,baseline,8,0.006029078969731927,6.970180193583171,0.0,15.18407935163016,2313.079904
+scan24_subset_uniform,scan24,subset_uniform,uniform_K10,Uniform K=10,baseline,10,0.005410374763111274,6.665482044219971,0.0,18.697462991261762,2891.34988
+scan24_subset_uniform,scan24,subset_uniform,uniform_K12,Uniform K=12,baseline,12,0.005448832254235943,6.676849206288655,0.0,9.538653016352724,3469.6198560000003
+scan24_subset_uniform,scan24,subset_uniform,uniform_K13,Uniform K=13,baseline,13,0.00567875150591135,6.799039602279663,0.0,23.910641925492854,3758.754844
+scan24_subset_uniform,scan24,subset_uniform,uniform_K14,Uniform K=14,baseline,14,0.005780714253584544,6.894091526667277,0.0,10.82602023346044,4047.8898320000003
+scan24_subset_uniform,scan24,subset_uniform,uniform_K16,Uniform K=16,baseline,16,0.006110363717501362,7.071218172709147,0.0,10.548428948086302,4626.159808
+scan24_subset_uniform,scan24,subset_uniform,power_K8_g0.5,Power K=8 (gamma=0.5),power,8,0.007076551982512076,7.424679438273112,0.0,19.020080395535455,2313.079904
+scan24_subset_uniform,scan24,subset_uniform,power_K8_g0.75,Power K=8 (gamma=0.75),power,8,0.00643293559551239,7.1030557950337725,0.0,15.663775169706085,2313.079904
+scan24_subset_uniform,scan24,subset_uniform,power_K8_g1.25,Power K=8 (gamma=1.25),power,8,0.005923320616905888,7.002799113591512,0.0,10.440061397945241,2313.079904
+scan24_subset_uniform,scan24,subset_uniform,power_K8_g1.5,Power K=8 (gamma=1.5),power,8,0.005927086419736345,7.118310451507568,0.0,23.927316444969264,2313.079904
+scan24_subset_uniform,scan24,subset_uniform,power_K8_g2.0,Power K=8 (gamma=2.0),power,8,0.006150378147140145,7.352080265680949,0.0,14.55386768645782,2313.079904
+scan24_subset_uniform,scan24,subset_uniform,cosine_late_K8,Cosine Late-Dense K=8,cosine,8,0.006106638194372256,7.300030628840129,0.0,21.463969287133878,2313.079904
+scan24_subset_uniform,scan24,subset_uniform,cosine_early_K8,Cosine Early-Dense K=8,cosine,8,0.00699565311272939,7.459306875864665,0.0,20.13656012159086,2313.079904
+scan24_subset_uniform,scan24,subset_uniform,cosine_endpoints_K8,Cosine Endpoints-Dense K=8,cosine,8,0.00618934507171313,7.160919268925984,0.0,8.483596221007891,2313.079904
+scan24_subset_uniform,scan24,subset_uniform,cosine_middle_K8,Cosine Middle-Dense K=8,cosine,8,0.005921280787636836,6.79647159576416,0.0,21.5014218468218,2313.079904
+scan24_subset_uniform,scan24,subset_uniform,piecewise_early_K8,Piecewise Early-Dense K=8,piecewise,8,0.005963362520560622,7.165506919225057,0.0,13.849777191193283,2313.079904
+scan24_subset_uniform,scan24,subset_uniform,piecewise_late_K8,Piecewise Late-Dense K=8,piecewise,8,0.006960699489961068,7.428155342737834,0.0,15.612875426072385,2313.079904
+scan24_subset_uniform,scan24,subset_uniform,piecewise_middle_K8,Piecewise Middle-Dense K=8,piecewise,8,0.005781602968151371,6.881580909093221,0.0,16.85341920624653,2313.079904
+scan24_subset_uniform,scan24,subset_uniform,piecewise_endpoints_K8,Piecewise Endpoints-Dense K=8,piecewise,8,0.006066093764578302,7.196047067642212,0.0,12.58348497633689,2313.079904
+scan24_subset_uniform,scan24,subset_uniform,random_K8_s42,Random Monotonic K=8 (seed=42),random,8,0.006571562107031544,7.207794030507405,0.0,18.733108183288376,2313.079904
+scan24_subset_uniform,scan24,subset_uniform,random_K8_s123,Random Monotonic K=8 (seed=123),random,8,0.006130313190321128,7.207576592763265,1.1944405724589888,14.538439614250608,2313.079904
+scan24_subset_uniform,scan24,subset_uniform,random_K8_s999,Random Monotonic K=8 (seed=999),random,8,0.005837085113550226,6.974537372589111,0.0,23.32084276430523,2313.079904
+scan24_subset_uniform,scan24,subset_uniform,power_K10_g0.5,Power K=10 (gamma=0.5),power,10,0.006576818181201816,7.262757301330566,0.0,17.51408220261632,2891.34988
+scan24_subset_uniform,scan24,subset_uniform,power_K10_g0.75,Power K=10 (gamma=0.75),power,10,0.005835996475070715,6.833255211512248,1.1944405724589888,17.461536810279465,2891.34988
+scan24_subset_uniform,scan24,subset_uniform,power_K10_g1.25,Power K=10 (gamma=1.25),power,10,0.00523561875646313,6.63207729657491,0.0,20.98417261704599,2891.34988
+scan24_subset_uniform,scan24,subset_uniform,power_K10_g1.5,Power K=10 (gamma=1.5),power,10,0.005201710426869492,6.663785854975383,0.0,13.866051895585931,2891.34988
+scan24_subset_uniform,scan24,subset_uniform,power_K10_g2.0,Power K=10 (gamma=2.0),power,10,0.005424393728996317,6.851292530695598,1.1944405724589888,22.194835226735822,2891.34988
+scan24_subset_uniform,scan24,subset_uniform,cosine_late_K10,Cosine Late-Dense K=10,cosine,10,0.005351604971413811,6.776110331217448,0.0,6.338507757325629,2891.34988
+scan24_subset_uniform,scan24,subset_uniform,cosine_early_K10,Cosine Early-Dense K=10,cosine,10,0.006386276722575228,7.158924659093221,0.0,2.8555322621745307,2891.34988
+scan24_subset_uniform,scan24,subset_uniform,cosine_endpoints_K10,Cosine Endpoints-Dense K=10,cosine,10,0.005463498644530773,6.789293050765991,0.0,23.154109806963387,2891.34988
+scan24_subset_uniform,scan24,subset_uniform,cosine_middle_K10,Cosine Middle-Dense K=10,cosine,10,0.005300698180993398,6.531145652135213,0.0,23.605868497147515,2891.34988
+scan24_subset_uniform,scan24,subset_uniform,piecewise_early_K10,Piecewise Early-Dense K=10,piecewise,10,0.005323256754005949,6.841378291447957,0.0,3.1914466573800664,2891.34988
+scan24_subset_uniform,scan24,subset_uniform,piecewise_late_K10,Piecewise Late-Dense K=10,piecewise,10,0.00637329447393616,7.164340098698934,0.0,0.7878226202864201,2891.34988
+scan24_subset_uniform,scan24,subset_uniform,piecewise_middle_K10,Piecewise Middle-Dense K=10,piecewise,10,0.0053864392296721535,6.641113201777141,0.0,23.04904673435929,2891.34988
+scan24_subset_uniform,scan24,subset_uniform,piecewise_endpoints_K10,Piecewise Endpoints-Dense K=10,piecewise,10,0.00517020079617699,6.653612772623698,0.0,6.200659358712123,2891.34988
+scan24_subset_uniform,scan24,subset_uniform,random_K10_s42,Random Monotonic K=10 (seed=42),random,10,0.005870186102886994,6.8388073444366455,0.0,2.8225595595301964,2891.34988
+scan24_subset_uniform,scan24,subset_uniform,random_K10_s123,Random Monotonic K=10 (seed=123),random,10,0.00603485534278055,7.183571815490723,0.0,12.273838163551376,2891.34988
+scan24_subset_uniform,scan24,subset_uniform,random_K10_s999,Random Monotonic K=10 (seed=999),random,10,0.005198234808631241,6.635823011398315,0.0,18.57391804041342,2891.34988
+scan24_subset_uniform,scan24,subset_uniform,power_K12_g0.5,Power K=12 (gamma=0.5),power,12,0.006253906913722555,7.152682224909465,0.0,18.16262344526528,3469.6198560000003
+scan24_subset_uniform,scan24,subset_uniform,power_K12_g0.75,Power K=12 (gamma=0.75),power,12,0.005646706946815054,6.745614290237427,0.0,3.943770756837521,3469.6198560000003
+scan24_subset_uniform,scan24,subset_uniform,power_K12_g1.25,Power K=12 (gamma=1.25),power,12,0.005406515284751852,6.752830584843953,0.0,11.510911867380868,3469.6198560000003
+scan24_subset_uniform,scan24,subset_uniform,power_K12_g1.5,Power K=12 (gamma=1.5),power,12,0.0054470244795084,6.782164494196574,0.0,30.30561828956851,3469.6198560000003
+scan24_subset_uniform,scan24,subset_uniform,power_K12_g2.0,Power K=12 (gamma=2.0),power,12,0.005754580566038688,6.984875202178955,0.0,1.9061307693063394,3469.6198560000003
+scan24_subset_uniform,scan24,subset_uniform,cosine_late_K12,Cosine Late-Dense K=12,cosine,12,0.0056062835889558,6.874948422114055,0.0,5.428920153054217,3469.6198560000003
+scan24_subset_uniform,scan24,subset_uniform,cosine_early_K12,Cosine Early-Dense K=12,cosine,12,0.006186976485575239,7.11348573366801,0.0,2.0614038653933573,3469.6198560000003
+scan24_subset_uniform,scan24,subset_uniform,cosine_endpoints_K12,Cosine Endpoints-Dense K=12,cosine,12,0.0058237168317039805,6.9829169909159345,0.0,16.796228609369937,3469.6198560000003
+scan24_subset_uniform,scan24,subset_uniform,cosine_middle_K12,Cosine Middle-Dense K=12,cosine,12,0.005266508397956689,6.4970630804697675,0.0,14.340342223690127,3469.6198560000003
+scan24_subset_uniform,scan24,subset_uniform,piecewise_early_K12,Piecewise Early-Dense K=12,piecewise,12,0.005614831422766049,6.967647473017375,0.0,3.895580321574594,3469.6198560000003
+scan24_subset_uniform,scan24,subset_uniform,piecewise_late_K12,Piecewise Late-Dense K=12,piecewise,12,0.006068078645815452,7.020879666010539,0.0,9.407511481084727,3469.6198560000003
+scan24_subset_uniform,scan24,subset_uniform,piecewise_middle_K12,Piecewise Middle-Dense K=12,piecewise,12,0.00537193613126874,6.65242060025533,0.0,15.596123391063678,3469.6198560000003
+scan24_subset_uniform,scan24,subset_uniform,piecewise_endpoints_K12,Piecewise Endpoints-Dense K=12,piecewise,12,0.005585760343819857,6.805185715357463,0.0,10.952961113454128,3469.6198560000003
+scan24_subset_uniform,scan24,subset_uniform,random_K12_s42,Random Monotonic K=12 (seed=42),random,12,0.005942098097875714,6.896366198857625,0.0,11.368618589762844,3469.6198560000003
+scan24_subset_uniform,scan24,subset_uniform,random_K12_s123,Random Monotonic K=12 (seed=123),random,12,0.005901911451170842,7.048246542612712,0.0,17.707546030196458,3469.6198560000003
+scan24_subset_uniform,scan24,subset_uniform,random_K12_s999,Random Monotonic K=12 (seed=999),random,12,0.005662337100754182,6.840205589930217,0.0,20.043641409922266,3469.6198560000003
+scan62_subset_middle,scan62,subset_middle,uniform_K8,Uniform K=8,baseline,8,0.00649214683411022,8.964245955149332,0.0,15.714574417066842,2313.079904
+scan62_subset_middle,scan62,subset_middle,uniform_K10,Uniform K=10,baseline,10,0.0052284061287840205,8.535237232844034,0.0,8.006669911238275,2891.34988
+scan62_subset_middle,scan62,subset_middle,uniform_K12,Uniform K=12,baseline,12,0.005088368120292823,8.529767751693726,0.0,24.550920097776075,3469.6198560000003
+scan62_subset_middle,scan62,subset_middle,uniform_K13,Uniform K=13,baseline,13,0.005061556119471788,8.532509088516235,0.0,7.373811538869078,3758.754844
+scan62_subset_middle,scan62,subset_middle,uniform_K14,Uniform K=14,baseline,14,0.005018637670824925,8.516686201095581,0.0,11.452068435872937,4047.8898320000003
+scan62_subset_middle,scan62,subset_middle,uniform_K16,Uniform K=16,baseline,16,0.0049177235923707485,8.451176563898722,0.0,25.179797794987007,4626.159808
+scan62_subset_middle,scan62,subset_middle,power_K8_g0.5,Power K=8 (gamma=0.5),power,8,0.0061925197175393505,9.036010901133219,0.0,19.394217907825084,2313.079904
+scan62_subset_middle,scan62,subset_middle,power_K8_g0.75,Power K=8 (gamma=0.75),power,8,0.006286181354274352,8.940430720647177,0.0,18.06623305872066,2313.079904
+scan62_subset_middle,scan62,subset_middle,power_K8_g1.25,Power K=8 (gamma=1.25),power,8,0.007064675524209936,9.199398120244345,0.0,10.529655123722415,2313.079904
+scan62_subset_middle,scan62,subset_middle,power_K8_g1.5,Power K=8 (gamma=1.5),power,8,0.007728821753213803,9.512935400009155,0.0,9.83219514131637,2313.079904
+scan62_subset_middle,scan62,subset_middle,power_K8_g2.0,Power K=8 (gamma=2.0),power,8,0.008704513078555465,10.073031425476074,0.0,24.889024671401557,2313.079904
+scan62_subset_middle,scan62,subset_middle,cosine_late_K8,Cosine Late-Dense K=8,cosine,8,0.008196879799167315,9.798571109771729,0.0,11.163051987138559,2313.079904
+scan62_subset_middle,scan62,subset_middle,cosine_early_K8,Cosine Early-Dense K=8,cosine,8,0.006235754893471797,9.02491283416748,0.0,24.449343000756574,2313.079904
+scan62_subset_middle,scan62,subset_middle,cosine_endpoints_K8,Cosine Endpoints-Dense K=8,cosine,8,0.006615743972361088,9.040773232777914,0.0,7.623317602197704,2313.079904
+scan62_subset_middle,scan62,subset_middle,cosine_middle_K8,Cosine Middle-Dense K=8,cosine,8,0.006883827115719517,9.1666468779246,0.0,16.10661873768911,2313.079904
+scan62_subset_middle,scan62,subset_middle,piecewise_early_K8,Piecewise Early-Dense K=8,piecewise,8,0.009786758028591672,10.619785706202189,0.0,11.255332769810847,2313.079904
+scan62_subset_middle,scan62,subset_middle,piecewise_late_K8,Piecewise Late-Dense K=8,piecewise,8,0.0062001605207721395,9.020816802978516,0.0,17.173213643532797,2313.079904
+scan62_subset_middle,scan62,subset_middle,piecewise_middle_K8,Piecewise Middle-Dense K=8,piecewise,8,0.007154465264951189,9.22003165880839,0.0,15.313145665542288,2313.079904
+scan62_subset_middle,scan62,subset_middle,piecewise_endpoints_K8,Piecewise Endpoints-Dense K=8,piecewise,8,0.007168717371920745,9.286795457204184,0.0,25.634236244969618,2313.079904
+scan62_subset_middle,scan62,subset_middle,random_K8_s42,Random Monotonic K=8 (seed=42),random,8,0.006281372392550111,9.029574553171793,0.0,19.45638444870112,2313.079904
+scan62_subset_middle,scan62,subset_middle,random_K8_s123,Random Monotonic K=8 (seed=123),random,8,0.011973428695152203,12.00863512357076,0.0,19.846963409155205,2313.079904
+scan62_subset_middle,scan62,subset_middle,random_K8_s999,Random Monotonic K=8 (seed=999),random,8,0.007303953403607011,9.315447886784872,0.0,19.820940299482697,2313.079904
+scan62_subset_middle,scan62,subset_middle,power_K10_g0.5,Power K=10 (gamma=0.5),power,10,0.005932795582339168,8.955366214116415,0.0,5.43259934828713,2891.34988
+scan62_subset_middle,scan62,subset_middle,power_K10_g0.75,Power K=10 (gamma=0.75),power,10,0.005393724112461011,8.62142793337504,0.0,22.16972657978626,2891.34988
+scan62_subset_middle,scan62,subset_middle,power_K10_g1.25,Power K=10 (gamma=1.25),power,10,0.005225537422423561,8.552198966344198,0.0,20.752843025566825,2891.34988
+scan62_subset_middle,scan62,subset_middle,power_K10_g1.5,Power K=10 (gamma=1.5),power,10,0.0052475950215011835,8.584869066874186,0.0,1.3079500988932555,2891.34988
+scan62_subset_middle,scan62,subset_middle,power_K10_g2.0,Power K=10 (gamma=2.0),power,10,0.005858378252014518,8.983347495396933,0.0,12.629443318229919,2891.34988
+scan62_subset_middle,scan62,subset_middle,cosine_late_K10,Cosine Late-Dense K=10,cosine,10,0.005521985003724694,8.761693080266317,0.0,7.604686980576026,2891.34988
+scan62_subset_middle,scan62,subset_middle,cosine_early_K10,Cosine Early-Dense K=10,cosine,10,0.005632537805164854,8.746054887771606,0.0,7.691386395905454,2891.34988
+scan62_subset_middle,scan62,subset_middle,cosine_endpoints_K10,Cosine Endpoints-Dense K=10,cosine,10,0.005285230077182253,8.604298909505209,0.0,6.51463827233957,2891.34988
+scan62_subset_middle,scan62,subset_middle,cosine_middle_K10,Cosine Middle-Dense K=10,cosine,10,0.005342601643254359,8.551026582717896,0.0,17.377520965602766,2891.34988
+scan62_subset_middle,scan62,subset_middle,piecewise_early_K10,Piecewise Early-Dense K=10,piecewise,10,0.005740146152675152,8.94689655303955,0.0,19.7440027185811,2891.34988
+scan62_subset_middle,scan62,subset_middle,piecewise_late_K10,Piecewise Late-Dense K=10,piecewise,10,0.005627744986365239,8.731536308924357,0.0,7.56727017265954,2891.34988
+scan62_subset_middle,scan62,subset_middle,piecewise_middle_K10,Piecewise Middle-Dense K=10,piecewise,10,0.005224895663559437,8.522838354110718,0.0,19.346815132111676,2891.34988
+scan62_subset_middle,scan62,subset_middle,piecewise_endpoints_K10,Piecewise Endpoints-Dense K=10,piecewise,10,0.005224473463992278,8.58586597442627,0.0,17.047032942249395,2891.34988
+scan62_subset_middle,scan62,subset_middle,random_K10_s42,Random Monotonic K=10 (seed=42),random,10,0.005419471999630332,8.618126153945923,0.0,16.67224509456516,2891.34988
+scan62_subset_middle,scan62,subset_middle,random_K10_s123,Random Monotonic K=10 (seed=123),random,10,0.0053155445493757725,8.90928339958191,0.0,12.675792946363726,2891.34988
+scan62_subset_middle,scan62,subset_middle,random_K10_s999,Random Monotonic K=10 (seed=999),random,10,0.0052302478191753226,8.568308035532633,0.0,19.550610643561146,2891.34988
+scan62_subset_middle,scan62,subset_middle,power_K12_g0.5,Power K=12 (gamma=0.5),power,12,0.005828909110277891,8.921146710713705,0.0,19.54151969734976,3469.6198560000003
+scan62_subset_middle,scan62,subset_middle,power_K12_g0.75,Power K=12 (gamma=0.75),power,12,0.0052685607224702835,8.590307553609213,0.0,25.295270431625223,3469.6198560000003
+scan62_subset_middle,scan62,subset_middle,power_K12_g1.25,Power K=12 (gamma=1.25),power,12,0.0050305452508231,8.52236541112264,0.0,7.691065554883973,3469.6198560000003
+scan62_subset_middle,scan62,subset_middle,power_K12_g1.5,Power K=12 (gamma=1.5),power,12,0.005008191491166751,8.553373018900553,0.0,15.496778467455352,3469.6198560000003
+scan62_subset_middle,scan62,subset_middle,power_K12_g2.0,Power K=12 (gamma=2.0),power,12,0.005245755737026532,8.839767773946127,0.0,20.837058133008437,3469.6198560000003
+scan62_subset_middle,scan62,subset_middle,cosine_late_K12,Cosine Late-Dense K=12,cosine,12,0.005149209561447303,8.718994935353598,0.0,21.90404499210356,3469.6198560000003
+scan62_subset_middle,scan62,subset_middle,cosine_early_K12,Cosine Early-Dense K=12,cosine,12,0.005436957969019811,8.663191477457682,0.0,22.723706690395073,3469.6198560000003
+scan62_subset_middle,scan62,subset_middle,cosine_endpoints_K12,Cosine Endpoints-Dense K=12,cosine,12,0.005140682682394981,8.602596124013266,0.0,18.611011508241816,3469.6198560000003
+scan62_subset_middle,scan62,subset_middle,cosine_middle_K12,Cosine Middle-Dense K=12,cosine,12,0.005132582426692049,8.504133701324463,0.0,20.681391594012844,3469.6198560000003
+scan62_subset_middle,scan62,subset_middle,piecewise_early_K12,Piecewise Early-Dense K=12,piecewise,12,0.005259859841316938,8.779346307118734,0.0,28.1629831266718,3469.6198560000003
+scan62_subset_middle,scan62,subset_middle,piecewise_late_K12,Piecewise Late-Dense K=12,piecewise,12,0.005427604696402947,8.648763656616211,0.0,9.906778583684039,3469.6198560000003
+scan62_subset_middle,scan62,subset_middle,piecewise_middle_K12,Piecewise Middle-Dense K=12,piecewise,12,0.005035256578897436,8.50729481379191,0.0,25.016639000932628,3469.6198560000003
+scan62_subset_middle,scan62,subset_middle,piecewise_endpoints_K12,Piecewise Endpoints-Dense K=12,piecewise,12,0.005077181616798043,8.545363028844198,0.0,8.288758031300697,3469.6198560000003
+scan62_subset_middle,scan62,subset_middle,random_K12_s42,Random Monotonic K=12 (seed=42),random,12,0.005448405941327413,8.683374722798666,0.0,11.492376521562027,3469.6198560000003
+scan62_subset_middle,scan62,subset_middle,random_K12_s123,Random Monotonic K=12 (seed=123),random,12,0.005273221991956234,8.857141415278116,0.0,9.854439697847878,3469.6198560000003
+scan62_subset_middle,scan62,subset_middle,random_K12_s999,Random Monotonic K=12 (seed=999),random,12,0.005055518122389913,8.563031832377115,0.0,11.245972724818335,3469.6198560000003
+scan62_subset_uniform,scan62,subset_uniform,uniform_K8,Uniform K=8,baseline,8,0.005650562544663747,6.328699111938477,0.0,6.852037166472524,2313.079904
+scan62_subset_uniform,scan62,subset_uniform,uniform_K10,Uniform K=10,baseline,10,0.004609607392922044,5.867257674535115,0.0,9.980632529831839,2891.34988
+scan62_subset_uniform,scan62,subset_uniform,uniform_K12,Uniform K=12,baseline,12,0.004291190921018521,5.667810837427775,0.0,18.030860647374023,3469.6198560000003
+scan62_subset_uniform,scan62,subset_uniform,uniform_K13,Uniform K=13,baseline,13,0.004181515852299829,5.619330167770386,0.0,18.381827285406384,3758.754844
+scan62_subset_uniform,scan62,subset_uniform,uniform_K14,Uniform K=14,baseline,14,0.004184492281638086,5.641739845275879,0.0,18.198300671590577,4047.8898320000003
+scan62_subset_uniform,scan62,subset_uniform,uniform_K16,Uniform K=16,baseline,16,0.004121589978846411,5.63517149289449,0.0,28.750217249447914,4626.159808
+scan62_subset_uniform,scan62,subset_uniform,power_K8_g0.5,Power K=8 (gamma=0.5),power,8,0.006772901474808653,6.894618431727092,1.1944405724589888,19.19491029312104,2313.079904
+scan62_subset_uniform,scan62,subset_uniform,power_K8_g0.75,Power K=8 (gamma=0.75),power,8,0.006020175681139032,6.495404005050659,0.0,16.275961858937055,2313.079904
+scan62_subset_uniform,scan62,subset_uniform,power_K8_g1.25,Power K=8 (gamma=1.25),power,8,0.005737725179642439,6.38258679707845,0.0,5.69377965454381,2313.079904
+scan62_subset_uniform,scan62,subset_uniform,power_K8_g1.5,Power K=8 (gamma=1.5),power,8,0.00583752376648287,6.433719714482625,0.0,6.403470504721365,2313.079904
+scan62_subset_uniform,scan62,subset_uniform,power_K8_g2.0,Power K=8 (gamma=2.0),power,8,0.006339339228967826,6.815951267878215,0.0,19.00415556046826,2313.079904
+scan62_subset_uniform,scan62,subset_uniform,cosine_late_K8,Cosine Late-Dense K=8,cosine,8,0.005990553724889954,6.577621062596639,0.0,25.635562533414955,2313.079904
+scan62_subset_uniform,scan62,subset_uniform,cosine_early_K8,Cosine Early-Dense K=8,cosine,8,0.005916479974985123,6.483716726303101,0.0,23.08683625004626,2313.079904
+scan62_subset_uniform,scan62,subset_uniform,cosine_endpoints_K8,Cosine Endpoints-Dense K=8,cosine,8,0.005523874191567302,6.294943650563558,0.0,28.300335722920664,2313.079904
+scan62_subset_uniform,scan62,subset_uniform,cosine_middle_K8,Cosine Middle-Dense K=8,cosine,8,0.006999646856759985,6.972496271133423,0.0,3.220176905415324,2313.079904
+scan62_subset_uniform,scan62,subset_uniform,piecewise_early_K8,Piecewise Early-Dense K=8,piecewise,8,0.006963715500508745,7.212075551350911,0.0,5.7243395306095115,2313.079904
+scan62_subset_uniform,scan62,subset_uniform,piecewise_late_K8,Piecewise Late-Dense K=8,piecewise,8,0.006160884474714597,6.577078739802043,0.0,12.282324869251575,2313.079904
+scan62_subset_uniform,scan62,subset_uniform,piecewise_middle_K8,Piecewise Middle-Dense K=8,piecewise,8,0.006126422823096315,6.5440395673116045,0.0,29.402904523644782,2313.079904
+scan62_subset_uniform,scan62,subset_uniform,piecewise_endpoints_K8,Piecewise Endpoints-Dense K=8,piecewise,8,0.0057036480866372585,6.371695041656494,0.0,25.383498101781438,2313.079904
+scan62_subset_uniform,scan62,subset_uniform,random_K8_s42,Random Monotonic K=8 (seed=42),random,8,0.006435030683254202,6.696045398712158,0.0,17.531851864663555,2313.079904
+scan62_subset_uniform,scan62,subset_uniform,random_K8_s123,Random Monotonic K=8 (seed=123),random,8,0.009161103206376234,8.917463779449463,0.0,8.234952522422834,2313.079904
+scan62_subset_uniform,scan62,subset_uniform,random_K8_s999,Random Monotonic K=8 (seed=999),random,8,0.005566628494610389,6.34001628557841,0.0,29.423347173108922,2313.079904
+scan62_subset_uniform,scan62,subset_uniform,power_K10_g0.5,Power K=10 (gamma=0.5),power,10,0.00525358272716403,6.18605097134908,0.0,11.402460771931132,2891.34988
+scan62_subset_uniform,scan62,subset_uniform,power_K10_g0.75,Power K=10 (gamma=0.75),power,10,0.0048428436275571585,5.978732585906982,0.0,12.04348843296711,2891.34988
+scan62_subset_uniform,scan62,subset_uniform,power_K10_g1.25,Power K=10 (gamma=1.25),power,10,0.004559326606492202,5.785399436950684,0.0,5.828230194127793,2891.34988
+scan62_subset_uniform,scan62,subset_uniform,power_K10_g1.5,Power K=10 (gamma=1.5),power,10,0.004494717655082543,5.808097203572591,0.0,20.489715781891363,2891.34988
+scan62_subset_uniform,scan62,subset_uniform,power_K10_g2.0,Power K=10 (gamma=2.0),power,10,0.004687191569246352,6.022742986679077,0.0,5.063304573521176,2891.34988
+scan62_subset_uniform,scan62,subset_uniform,cosine_late_K10,Cosine Late-Dense K=10,cosine,10,0.004589361953549087,5.921749035517375,0.0,7.696950919005751,2891.34988
+scan62_subset_uniform,scan62,subset_uniform,cosine_early_K10,Cosine Early-Dense K=10,cosine,10,0.005038071423768997,6.104342222213745,0.0,19.064617906892046,2891.34988
+scan62_subset_uniform,scan62,subset_uniform,cosine_endpoints_K10,Cosine Endpoints-Dense K=10,cosine,10,0.004603635286912322,5.843122323354085,0.0,10.169657125764397,2891.34988
+scan62_subset_uniform,scan62,subset_uniform,cosine_middle_K10,Cosine Middle-Dense K=10,cosine,10,0.005050927633419633,5.976691007614136,0.0,16.02813829887398,2891.34988
+scan62_subset_uniform,scan62,subset_uniform,piecewise_early_K10,Piecewise Early-Dense K=10,piecewise,10,0.004865889515106876,6.106600284576416,0.0,4.688048822304896,2891.34988
+scan62_subset_uniform,scan62,subset_uniform,piecewise_late_K10,Piecewise Late-Dense K=10,piecewise,10,0.0050523774698376656,6.098740577697754,0.0,17.39431736126718,2891.34988
+scan62_subset_uniform,scan62,subset_uniform,piecewise_middle_K10,Piecewise Middle-Dense K=10,piecewise,10,0.004655856406316161,5.864996512730916,0.0,7.672840051080809,2891.34988
+scan62_subset_uniform,scan62,subset_uniform,piecewise_endpoints_K10,Piecewise Endpoints-Dense K=10,piecewise,10,0.0044905342704926925,5.819612820943196,0.0,6.463335440823136,2891.34988
+scan62_subset_uniform,scan62,subset_uniform,random_K10_s42,Random Monotonic K=10 (seed=42),random,10,0.004928115677709381,5.996260484059651,0.0,10.51552516987695,2891.34988
+scan62_subset_uniform,scan62,subset_uniform,random_K10_s123,Random Monotonic K=10 (seed=123),random,10,0.0045688899311547475,5.971282561620076,0.0,6.20582243922265,2891.34988
+scan62_subset_uniform,scan62,subset_uniform,random_K10_s999,Random Monotonic K=10 (seed=999),random,10,0.004468286293558776,5.769203424453735,0.0,5.813181384182502,2891.34988
+scan62_subset_uniform,scan62,subset_uniform,power_K12_g0.5,Power K=12 (gamma=0.5),power,12,0.0051031414574633045,6.089234987894694,0.0,19.743294193176414,3469.6198560000003
+scan62_subset_uniform,scan62,subset_uniform,power_K12_g0.75,Power K=12 (gamma=0.75),power,12,0.004503859439864755,5.802017370859782,0.0,15.792541417755459,3469.6198560000003
+scan62_subset_uniform,scan62,subset_uniform,power_K12_g1.25,Power K=12 (gamma=1.25),power,12,0.0042051346972584724,5.701067606608073,0.0,26.721045722651983,3469.6198560000003
+scan62_subset_uniform,scan62,subset_uniform,power_K12_g1.5,Power K=12 (gamma=1.5),power,12,0.004282495045724015,5.804654757181804,0.0,22.69417116483537,3469.6198560000003
+scan62_subset_uniform,scan62,subset_uniform,power_K12_g2.0,Power K=12 (gamma=2.0),power,12,0.004602605282949905,6.1281726360321045,0.0,28.468259125316607,3469.6198560000003
+scan62_subset_uniform,scan62,subset_uniform,cosine_late_K12,Cosine Late-Dense K=12,cosine,12,0.004434462054632604,5.971611976623535,0.0,1.130100048181861,3469.6198560000003
+scan62_subset_uniform,scan62,subset_uniform,cosine_early_K12,Cosine Early-Dense K=12,cosine,12,0.004832862798745434,5.954361041386922,0.0,12.607939232467027,3469.6198560000003
+scan62_subset_uniform,scan62,subset_uniform,cosine_endpoints_K12,Cosine Endpoints-Dense K=12,cosine,12,0.004353917165038486,5.775439023971558,0.0,15.24515059874628,3469.6198560000003
+scan62_subset_uniform,scan62,subset_uniform,cosine_middle_K12,Cosine Middle-Dense K=12,cosine,12,0.004403922939673066,5.7180122534434,0.0,17.127313046976067,3469.6198560000003
+scan62_subset_uniform,scan62,subset_uniform,piecewise_early_K12,Piecewise Early-Dense K=12,piecewise,12,0.004545338257836799,6.047681490580241,0.0,5.92105989989377,3469.6198560000003
+scan62_subset_uniform,scan62,subset_uniform,piecewise_late_K12,Piecewise Late-Dense K=12,piecewise,12,0.004817090462893248,5.930835962295532,0.0,8.876685524999273,3469.6198560000003
+scan62_subset_uniform,scan62,subset_uniform,piecewise_middle_K12,Piecewise Middle-Dense K=12,piecewise,12,0.004219955803516011,5.636925379435222,0.0,21.120903719441245,3469.6198560000003
+scan62_subset_uniform,scan62,subset_uniform,piecewise_endpoints_K12,Piecewise Endpoints-Dense K=12,piecewise,12,0.004246539746721585,5.713809887568156,0.0,25.69183624854328,3469.6198560000003
+scan62_subset_uniform,scan62,subset_uniform,random_K12_s42,Random Monotonic K=12 (seed=42),random,12,0.004605934955179691,5.8658294677734375,0.0,15.555806065053561,3469.6198560000003
+scan62_subset_uniform,scan62,subset_uniform,random_K12_s123,Random Monotonic K=12 (seed=123),random,12,0.004379547433927655,5.875019073486328,1.1944405724589888,3.775534908860957,3469.6198560000003
+scan62_subset_uniform,scan62,subset_uniform,random_K12_s999,Random Monotonic K=12 (seed=999),random,12,0.0042610100548093515,5.704657316207886,0.0,18.008588610003276,3469.6198560000003
