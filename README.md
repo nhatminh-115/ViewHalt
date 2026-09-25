@@ -2,17 +2,17 @@
 
 **Research Hypothesis**: In NVIDIA Déjà View / DVLT, different views within the same multi-view scene may require different numbers of recurrent refinement steps. If some views converge earlier than others, future work may use per-view adaptive halting to reduce compute.
 
-> **Phase**: V0.7 Dense Pareto Resolution Complete — **Final Verdict: GO to Controller Research**.
+> **Phase**: V0.8 True Asynchronous Freeze & Real Compute Validation Complete — **Final Scientific Verdict: GO to Controller Research**.
 > **Reports**:
 > - [ViewHalt V0 Feasibility Report](docs/V0_REPORT.md)
 > - [ViewHalt V0.5 Robustness & Predictive Signal Report](docs/V0.5_REPORT.md)
 > - [ViewHalt V0.6 Common-Trajectory & Freeze Oracle Report](docs/V0.6_REPORT.md)
 > - [ViewHalt V0.7 Dense Pareto Resolution & Headroom Report](docs/V0.7_REPORT.md)
-> **Key Finding (V0.7 Dense Resolution)**:
-> 1. Dense integer evaluation across $i \in \{8..16\}$ on 14 DTU scans (168 view instances, 140 unique physical frames) establishes an **interpolated matched-quality headroom of +7.08% [95% bootstrap CI: +2.67%, +11.75%]** at 5% tolerance (+11.24% at 2% tolerance).
-> 2. Bootstrap resamples show **0.0% failure rate** below breakeven ($p < 0.0001$), confirming a statistically robust efficiency advantage over best uniform stopping (Fixed $i=15$).
-> 3. Asynchronous freezing causes **zero cross-view degradation** under global attention coupling ($+0.0012\%$ active view delta).
-> 4. Out-of-sample LOSO CV confirms hidden delta alone is insufficient ($\text{OOS AUROC} \approx 0.63$), establishing that Phase V1 must pursue learned multi-view probing representations.
+> - [ViewHalt V0.8 True Freeze & Real Compute Report](docs/V0.8_REPORT.md)
+> **Key Finding (V0.8 Real Compute Validation)**:
+> 1. **True Static Freezing Validated**: Bypassing frame attention and using frozen static K/V in global attention preserves reconstruction quality (AbsRel 0.009274 vs 0.009163) with minimal active view error delta (+0.57% to +2.93%).
+> 2. **Exact Sparse Execution Engine**: Sparse Active-Q / Frozen-KV with KV caching matches the reference static implementation to 7 decimal places (mean delta = $1.51 \times 10^{-7}$).
+> 3. **Measured Real Latency Headroom**: On single RTX 5070 Laptop GPU, sparse execution cuts recurrent block latency from 396.4 ms (K=16) to 341.4 ms (14.34% latency saving, 1.207x speedup). At matched quality, it outperforms Fixed $i=15$ by **+10.62% real latency headroom** (**1.165x speedup**, 95% bootstrap CI: [+2.26%, +19.53%], $p < 0.005$).
 > **Hardware Constraint**: Single NVIDIA GeForce RTX 5070 Laptop GPU (8 GB VRAM), batch size 1, inference only (bf16).
 > **Upstream Base**: [nv-tlabs/dvlt](https://github.com/nv-tlabs/dvlt) pinned at commit `134b21f2af02d98039e79ab5dd48f36dc8123c97` (Apache-2.0 / NVIDIA Research license).
 

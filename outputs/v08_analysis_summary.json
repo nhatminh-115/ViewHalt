@@ -1,0 +1,198 @@
+{
+  "metadata": {
+    "version": "V0.8",
+    "num_view_instances": 168,
+    "max_c_vs_d_diff": 0.0761442184448242
+  },
+  "quality_summary": {
+    "5pct": {
+      "fixed16": {
+        "abs_rel": 0.008940930758225904,
+        "rmse": 16.188968134777888,
+        "rot_err_deg": 0.0,
+        "trans_err_deg": 14.748317092484719
+      },
+      "fixed15": {
+        "abs_rel": 0.009036133276475986
+      },
+      "fixed14": {
+        "abs_rel": 0.009266169389731956
+      },
+      "regime_b_overwrite": {
+        "abs_rel": 0.009162807146952038,
+        "rmse": 16.386055669614247,
+        "rot_err_deg": 0.08531718374707063,
+        "trans_err_deg": 15.011292736388999,
+        "active_view_deg_pct": 0.08792259669780061
+      },
+      "regime_c_true_static": {
+        "abs_rel": 0.009274350117526099,
+        "rmse": 16.442206736121857,
+        "rot_err_deg": 0.0,
+        "trans_err_deg": 15.694868918405152,
+        "active_view_deg_pct": 2.930697566935091
+      },
+      "regime_d_sparse": {
+        "abs_rel": 0.009274446456748497,
+        "rmse": 16.442271807364055,
+        "rot_err_deg": 0.0,
+        "trans_err_deg": 14.983967238057208
+      },
+      "diff_b_vs_c": {
+        "abs_rel_diff": 0.00011154297057406063,
+        "rmse_diff": 0.05615106650761206
+      }
+    },
+    "2pct": {
+      "fixed16": {
+        "abs_rel": 0.008940930758225904,
+        "rmse": 16.188968134777888,
+        "rot_err_deg": 0.0,
+        "trans_err_deg": 14.748317092484719
+      },
+      "fixed15": {
+        "abs_rel": 0.009036133276475986
+      },
+      "fixed14": {
+        "abs_rel": 0.009266169389731956
+      },
+      "regime_b_overwrite": {
+        "abs_rel": 0.008967466800684236,
+        "rmse": 16.273454189300537,
+        "rot_err_deg": 0.08531718374707063,
+        "trans_err_deg": 16.099212966279783,
+        "active_view_deg_pct": 0.11525679029771345
+      },
+      "regime_c_true_static": {
+        "abs_rel": 0.00901726282124092,
+        "rmse": 16.299588924362546,
+        "rot_err_deg": 0.042658591873535316,
+        "trans_err_deg": 18.37314723269059,
+        "active_view_deg_pct": 0.5696097790213092
+      },
+      "regime_d_sparse": {
+        "abs_rel": 0.009017424451442206,
+        "rmse": 16.29969665833882,
+        "rot_err_deg": 0.042658591873535316,
+        "trans_err_deg": 18.37314723269059
+      },
+      "diff_b_vs_c": {
+        "abs_rel_diff": 4.979602055668328e-05,
+        "rmse_diff": 0.02613473506200893
+      }
+    }
+  },
+  "timing_summary": {
+    "Fixed_K16": {
+      "mean_recurrent_flops_gflops": 3641.95,
+      "mean_flop_savings_pct": 0.0,
+      "median_latency_ms": 396.37,
+      "mean_latency_ms": 393.73,
+      "iqr_latency_ms": 30.02,
+      "mean_latency_savings_pct": 0.0,
+      "mean_speedup_vs_k16": 1.0,
+      "mean_speedup_vs_i15": 0.964,
+      "mean_speedup_vs_i14": 0.906,
+      "matched_latency_savings_vs_i15_pct": -4.21,
+      "mean_peak_vram_mb": 1214.0
+    },
+    "Fixed_i12": {
+      "mean_recurrent_flops_gflops": 2731.46,
+      "mean_flop_savings_pct": 25.0,
+      "median_latency_ms": 294.01,
+      "mean_latency_ms": 302.37,
+      "iqr_latency_ms": 32.96,
+      "mean_latency_savings_pct": 23.13,
+      "mean_speedup_vs_k16": 1.308,
+      "mean_speedup_vs_i15": 1.259,
+      "mean_speedup_vs_i14": 1.181,
+      "matched_latency_savings_vs_i15_pct": 20.02,
+      "mean_peak_vram_mb": 1214.0
+    },
+    "Fixed_i14": {
+      "mean_recurrent_flops_gflops": 3186.71,
+      "mean_flop_savings_pct": 12.5,
+      "median_latency_ms": 355.04,
+      "mean_latency_ms": 356.22,
+      "iqr_latency_ms": 39.47,
+      "mean_latency_savings_pct": 9.39,
+      "mean_speedup_vs_k16": 1.112,
+      "mean_speedup_vs_i15": 1.069,
+      "mean_speedup_vs_i14": 1.0,
+      "matched_latency_savings_vs_i15_pct": 5.86,
+      "mean_peak_vram_mb": 1214.0
+    },
+    "Fixed_i15": {
+      "mean_recurrent_flops_gflops": 3414.33,
+      "mean_flop_savings_pct": 6.25,
+      "median_latency_ms": 378.44,
+      "mean_latency_ms": 379.3,
+      "iqr_latency_ms": 41.91,
+      "mean_latency_savings_pct": 3.61,
+      "mean_speedup_vs_k16": 1.042,
+      "mean_speedup_vs_i15": 1.0,
+      "mean_speedup_vs_i14": 0.941,
+      "matched_latency_savings_vs_i15_pct": 0.0,
+      "mean_peak_vram_mb": 1214.0
+    },
+    "Fixed_i8": {
+      "mean_recurrent_flops_gflops": 1820.98,
+      "mean_flop_savings_pct": 50.0,
+      "median_latency_ms": 190.81,
+      "mean_latency_ms": 198.02,
+      "iqr_latency_ms": 8.24,
+      "mean_latency_savings_pct": 49.67,
+      "mean_speedup_vs_k16": 1.998,
+      "mean_speedup_vs_i15": 1.921,
+      "mean_speedup_vs_i14": 1.804,
+      "matched_latency_savings_vs_i15_pct": 47.71,
+      "mean_peak_vram_mb": 1214.0
+    },
+    "Ref_Static_5pct": {
+      "mean_recurrent_flops_gflops": 2921.15,
+      "mean_flop_savings_pct": 19.79,
+      "median_latency_ms": 404.36,
+      "mean_latency_ms": 402.19,
+      "iqr_latency_ms": 29.98,
+      "mean_latency_savings_pct": -2.49,
+      "mean_speedup_vs_k16": 0.984,
+      "mean_speedup_vs_i15": 0.947,
+      "mean_speedup_vs_i14": 0.891,
+      "matched_latency_savings_vs_i15_pct": -6.67,
+      "mean_peak_vram_mb": 1201.8
+    },
+    "Sparse_Oracle_2pct": {
+      "mean_recurrent_flops_gflops": 3062.06,
+      "mean_flop_savings_pct": 15.92,
+      "median_latency_ms": 367.77,
+      "mean_latency_ms": 350.13,
+      "iqr_latency_ms": 79.49,
+      "mean_latency_savings_pct": 10.78,
+      "mean_speedup_vs_k16": 1.159,
+      "mean_speedup_vs_i15": 1.119,
+      "mean_speedup_vs_i14": 1.042,
+      "matched_latency_savings_vs_i15_pct": 6.87,
+      "mean_peak_vram_mb": 1286.0
+    },
+    "Sparse_Oracle_5pct": {
+      "mean_recurrent_flops_gflops": 2921.15,
+      "mean_flop_savings_pct": 19.79,
+      "median_latency_ms": 341.38,
+      "mean_latency_ms": 336.45,
+      "iqr_latency_ms": 67.03,
+      "mean_latency_savings_pct": 14.34,
+      "mean_speedup_vs_k16": 1.207,
+      "mean_speedup_vs_i15": 1.165,
+      "mean_speedup_vs_i14": 1.085,
+      "matched_latency_savings_vs_i15_pct": 10.62,
+      "mean_peak_vram_mb": 1282.8
+    }
+  },
+  "headroom_summary": {
+    "real_latency_headroom_5pct_discrete": 10.73,
+    "bootstrap_mean_headroom_pct": 10.66,
+    "bootstrap_95ci_lower_pct": 2.26,
+    "bootstrap_95ci_upper_pct": 19.53,
+    "bootstrap_failure_rate_pct": 0.49
+  }
+}
