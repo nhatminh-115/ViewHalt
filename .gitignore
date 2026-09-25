@@ -187,9 +187,10 @@ ENV/
 *.swp
 *.swo
 
-# DNRM specific
-/datasets/
-outputs/
+datasets/
+outputs/*
+!outputs/v0_*
+!outputs/*.png
 third_party/
 visualization/
 checkpoints/
