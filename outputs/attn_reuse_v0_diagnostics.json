@@ -1,0 +1,74 @@
+[
+  {
+    "name": "VarA Skip 16",
+    "step": 16,
+    "method": "skip",
+    "global_out_drift": 0.0670249473,
+    "global_out_cos": 0.9992695332,
+    "residual_cos": 0.9952270031,
+    "residual_ratio": 0.11584435850000001,
+    "abs_rel": 0.0057649868035999,
+    "delta_absrel": 4.616591225690015e-05,
+    "delta_pct": 0.8072627755624397
+  },
+  {
+    "name": "VarA Skip 15",
+    "step": 15,
+    "method": "skip",
+    "global_out_drift": 0.0657390645,
+    "global_out_cos": 0.9991554439,
+    "residual_cos": 0.9941895366000001,
+    "residual_ratio": 0.12137641510000001,
+    "abs_rel": 0.0056843681377358,
+    "delta_absrel": -3.44527536072e-05,
+    "delta_pct": -0.6024450540032417
+  },
+  {
+    "name": "VarB Reuse 16 (a=0.75)",
+    "step": 16,
+    "method": "residual_reuse",
+    "global_out_drift": 0.0670249473,
+    "global_out_cos": 0.9992695332,
+    "residual_cos": 0.9952270031,
+    "residual_ratio": 0.11584435850000001,
+    "abs_rel": 0.005687375285197,
+    "delta_absrel": -3.144560614599945e-05,
+    "delta_pct": -0.5498617065206742
+  },
+  {
+    "name": "VarB Reuse 15 (a=0.75)",
+    "step": 15,
+    "method": "residual_reuse",
+    "global_out_drift": 0.0657390645,
+    "global_out_cos": 0.9991554439,
+    "residual_cos": 0.9941895366000001,
+    "residual_ratio": 0.12137641510000001,
+    "abs_rel": 0.0056843965508353,
+    "delta_absrel": -3.4424340507700074e-05,
+    "delta_pct": -0.6019482190780049
+  },
+  {
+    "name": "VarC Freeze K/V 16",
+    "step": 16,
+    "method": "frozen_kv",
+    "global_out_drift": 0.0670249473,
+    "global_out_cos": 0.9992695332,
+    "residual_cos": 0.9952270031,
+    "residual_ratio": 0.11584435850000001,
+    "abs_rel": 0.0057002013976064,
+    "delta_absrel": -1.861949373659945e-05,
+    "delta_pct": -0.3255827397005062
+  },
+  {
+    "name": "VarC Freeze K/V 15",
+    "step": 15,
+    "method": "frozen_kv",
+    "global_out_drift": 0.0657390645,
+    "global_out_cos": 0.9991554439,
+    "residual_cos": 0.9941895366000001,
+    "residual_ratio": 0.12137641510000001,
+    "abs_rel": 0.0057038741457896,
+    "delta_absrel": -1.4946745553399456e-05,
+    "delta_pct": -0.2613606167667437
+  }
+]

@@ -195,6 +195,7 @@ outputs/*
 !outputs/v07_*
 !outputs/v08_*
 !outputs/v08_1_*
+!outputs/attn_reuse_v0_*
 !outputs/*.png
 third_party/
 visualization/
