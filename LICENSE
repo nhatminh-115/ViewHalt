@@ -1,3 +1,16 @@
+Copyright (c) 2026 NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+
+This repository is primarily licensed under the Apache License, Version 2.0.
+Portions of the repository incorporate or adapt third-party code and remain
+subject to the third-party copyright and license notices preserved in the
+relevant source files and in THIRD_PARTY_LICENSES.md. The VGGT-derived files
+identified in THIRD_PARTY_LICENSES.md are distributed under the VGGT License;
+see LICENSES/VGGT-LICENSE.txt.
+
+The model weights (the nvidia/dvlt checkpoint) are not covered by this license.
+They are released separately under the NVIDIA License (non-commercial; research
+and evaluation use only); see LICENSES/NVIDIA-LICENSE.txt.
+
                                  Apache License
                            Version 2.0, January 2004
                         http://www.apache.org/licenses/
