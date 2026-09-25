@@ -2,15 +2,17 @@
 
 **Research Hypothesis**: In NVIDIA Déjà View / DVLT, different views within the same multi-view scene may require different numbers of recurrent refinement steps. If some views converge earlier than others, future work may use per-view adaptive halting to reduce compute.
 
-> **Phase**: V0.6 Common-Trajectory Validation Complete — **Verdict: REVISE (or KILL)**.
+> **Phase**: V0.7 Dense Pareto Resolution Complete — **Final Verdict: GO to Controller Research**.
 > **Reports**:
 > - [ViewHalt V0 Feasibility Report](docs/V0_REPORT.md)
 > - [ViewHalt V0.5 Robustness & Predictive Signal Report](docs/V0.5_REPORT.md)
 > - [ViewHalt V0.6 Common-Trajectory & Freeze Oracle Report](docs/V0.6_REPORT.md)
-> **Key Finding**: When resolving the linspace schedule discrepancy by evaluating a single common $K=16$ recurrent trajectory across 14 DTU scans (168 view instances, 140 unique physical frames):
-> 1. Asynchronous freezing causes **zero cross-view degradation** under real attention coupling (active view error delta $= +0.0019\%$).
-> 2. However, hidden-state delta is **uninformative within fixed iterations** ($p \ge 0.10$, invalidated as stopping threshold).
-> 3. Step-equivalent oracle savings compresses to **13.8%** at 5% tolerance (yielding merely **1.3% headroom** over trivial uniform stopping at $i=14$).
+> - [ViewHalt V0.7 Dense Pareto Resolution & Headroom Report](docs/V0.7_REPORT.md)
+> **Key Finding (V0.7 Dense Resolution)**:
+> 1. Dense integer evaluation across $i \in \{8..16\}$ on 14 DTU scans (168 view instances, 140 unique physical frames) establishes an **interpolated matched-quality headroom of +7.08% [95% bootstrap CI: +2.67%, +11.75%]** at 5% tolerance (+11.24% at 2% tolerance).
+> 2. Bootstrap resamples show **0.0% failure rate** below breakeven ($p < 0.0001$), confirming a statistically robust efficiency advantage over best uniform stopping (Fixed $i=15$).
+> 3. Asynchronous freezing causes **zero cross-view degradation** under global attention coupling ($+0.0012\%$ active view delta).
+> 4. Out-of-sample LOSO CV confirms hidden delta alone is insufficient ($\text{OOS AUROC} \approx 0.63$), establishing that Phase V1 must pursue learned multi-view probing representations.
 > **Hardware Constraint**: Single NVIDIA GeForce RTX 5070 Laptop GPU (8 GB VRAM), batch size 1, inference only (bf16).
 > **Upstream Base**: [nv-tlabs/dvlt](https://github.com/nv-tlabs/dvlt) pinned at commit `134b21f2af02d98039e79ab5dd48f36dc8123c97` (Apache-2.0 / NVIDIA Research license).
 

@@ -192,6 +192,7 @@ outputs/*
 !outputs/v0_*
 !outputs/v05_*
 !outputs/v06_*
+!outputs/v07_*
 !outputs/*.png
 third_party/
 visualization/
