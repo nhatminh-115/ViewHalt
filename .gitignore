@@ -191,6 +191,7 @@ datasets/
 outputs/*
 !outputs/v0_*
 !outputs/v05_*
+!outputs/v06_*
 !outputs/*.png
 third_party/
 visualization/
@@ -204,4 +205,5 @@ local.yaml
 .venv/
 data/
 cache/
+scratch/
 *.zip

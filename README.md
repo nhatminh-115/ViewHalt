@@ -2,11 +2,15 @@
 
 **Research Hypothesis**: In NVIDIA Déjà View / DVLT, different views within the same multi-view scene may require different numbers of recurrent refinement steps. If some views converge earlier than others, future work may use per-view adaptive halting to reduce compute.
 
-> **Phase**: V0.5 Robustness Validation Complete — **Verdict: GO to Controller Design**.
+> **Phase**: V0.6 Common-Trajectory Validation Complete — **Verdict: REVISE (or KILL)**.
 > **Reports**:
 > - [ViewHalt V0 Feasibility Report](docs/V0_REPORT.md)
 > - [ViewHalt V0.5 Robustness & Predictive Signal Report](docs/V0.5_REPORT.md)
-> **Key Finding**: In-distribution ($K \in \{8, 10, 12, 14, 16\}$) evaluation across 14 DTU scans (168 views) confirms **92.9% early saturation** and **27.5% oracle compute savings** (95% CI: [22.7%, 32.4%]). Recurrent hidden-state delta strongly predicts future gain (Spearman $\rho = 0.621$, AUROC = 0.861).
+> - [ViewHalt V0.6 Common-Trajectory & Freeze Oracle Report](docs/V0.6_REPORT.md)
+> **Key Finding**: When resolving the linspace schedule discrepancy by evaluating a single common $K=16$ recurrent trajectory across 14 DTU scans (168 view instances, 140 unique physical frames):
+> 1. Asynchronous freezing causes **zero cross-view degradation** under real attention coupling (active view error delta $= +0.0019\%$).
+> 2. However, hidden-state delta is **uninformative within fixed iterations** ($p \ge 0.10$, invalidated as stopping threshold).
+> 3. Step-equivalent oracle savings compresses to **13.8%** at 5% tolerance (yielding merely **1.3% headroom** over trivial uniform stopping at $i=14$).
 > **Hardware Constraint**: Single NVIDIA GeForce RTX 5070 Laptop GPU (8 GB VRAM), batch size 1, inference only (bf16).
 > **Upstream Base**: [nv-tlabs/dvlt](https://github.com/nv-tlabs/dvlt) pinned at commit `134b21f2af02d98039e79ab5dd48f36dc8123c97` (Apache-2.0 / NVIDIA Research license).
 
