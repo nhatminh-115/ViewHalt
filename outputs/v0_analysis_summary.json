@@ -1,0 +1,371 @@
+{
+  "metadata": {
+    "upstream_commit": "134b21f2af02d98039e79ab5dd48f36dc8123c97",
+    "checkpoint": "nvidia/dvlt",
+    "checkpoint_hash": "20f919875a00ee3ab2e840f2f31580f4652b7c5e",
+    "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+    "total_vram_gb": 7.96,
+    "precision": "bf16",
+    "resolution": [
+      378,
+      504
+    ],
+    "k_values": [
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16
+    ],
+    "scans": [
+      "scan1",
+      "scan10",
+      "scan24",
+      "scan33",
+      "scan110"
+    ],
+    "num_views_per_scene": 6
+  },
+  "fixed_k_summary": {
+    "4": {
+      "mean_abs_rel": 0.01221,
+      "std_abs_rel": 0.006511,
+      "mean_rmse_mm": 12.7395,
+      "mean_rot_err_deg": 0.023,
+      "mean_geom_err_mm": 644.8842,
+      "mean_hidden_delta": 0.20356,
+      "mean_runtime_ms": 601.9,
+      "mean_peak_vram_mb": 2099.9
+    },
+    "6": {
+      "mean_abs_rel": 0.007989,
+      "std_abs_rel": 0.004038,
+      "mean_rmse_mm": 9.6432,
+      "mean_rot_err_deg": 0.0123,
+      "mean_geom_err_mm": 644.8121,
+      "mean_hidden_delta": 0.133784,
+      "mean_runtime_ms": 523.2,
+      "mean_peak_vram_mb": 2146.8
+    },
+    "8": {
+      "mean_abs_rel": 0.005873,
+      "std_abs_rel": 0.00271,
+      "mean_rmse_mm": 8.3192,
+      "mean_rot_err_deg": 0.0074,
+      "mean_geom_err_mm": 644.7784,
+      "mean_hidden_delta": 0.101156,
+      "mean_runtime_ms": 620.5,
+      "mean_peak_vram_mb": 2183.1
+    },
+    "10": {
+      "mean_abs_rel": 0.005171,
+      "std_abs_rel": 0.002471,
+      "mean_rmse_mm": 7.8709,
+      "mean_rot_err_deg": 0.0056,
+      "mean_geom_err_mm": 644.7651,
+      "mean_hidden_delta": 0.084804,
+      "mean_runtime_ms": 699.3,
+      "mean_peak_vram_mb": 2219.9
+    },
+    "12": {
+      "mean_abs_rel": 0.004994,
+      "std_abs_rel": 0.002464,
+      "mean_rmse_mm": 7.7615,
+      "mean_rot_err_deg": 0.0054,
+      "mean_geom_err_mm": 644.7591,
+      "mean_hidden_delta": 0.075478,
+      "mean_runtime_ms": 750.8,
+      "mean_peak_vram_mb": 2255.2
+    },
+    "14": {
+      "mean_abs_rel": 0.004897,
+      "std_abs_rel": 0.002488,
+      "mean_rmse_mm": 7.7034,
+      "mean_rot_err_deg": 0.0055,
+      "mean_geom_err_mm": 644.7534,
+      "mean_hidden_delta": 0.070194,
+      "mean_runtime_ms": 795.7,
+      "mean_peak_vram_mb": 2291.4
+    },
+    "16": {
+      "mean_abs_rel": 0.00489,
+      "std_abs_rel": 0.002526,
+      "mean_rmse_mm": 7.6816,
+      "mean_rot_err_deg": 0.0056,
+      "mean_geom_err_mm": 644.7512,
+      "mean_hidden_delta": 0.066271,
+      "mean_runtime_ms": 896.0,
+      "mean_peak_vram_mb": 2326.5
+    }
+  },
+  "saturation_results": {
+    "rel_1pct": {
+      "type": "relative",
+      "tolerance": 0.01,
+      "mean_K_star": 13.2,
+      "median_K_star": 14.0,
+      "dist_counts": {
+        "4": 0,
+        "6": 1,
+        "8": 4,
+        "10": 4,
+        "12": 1,
+        "14": 7,
+        "16": 13
+      },
+      "pct_sat_before_16": 56.67,
+      "pct_sat_le_8": 16.67,
+      "pct_sat_le_10": 30.0,
+      "pct_sat_le_12": 33.33,
+      "compute_saved_pct": 17.5,
+      "mean_intra_scene_variance": 2.756,
+      "scene_variances": {
+        "scan1": 8.0,
+        "scan10": 0.888888888888889,
+        "scan110": 0.0,
+        "scan24": 1.3333333333333333,
+        "scan33": 3.555555555555555
+      },
+      "mean_oracle_absrel": 0.004848,
+      "mean_k16_absrel": 0.00489,
+      "quality_loss_pct": -0.868
+    },
+    "rel_2pct": {
+      "type": "relative",
+      "tolerance": 0.02,
+      "mean_K_star": 12.67,
+      "median_K_star": 14.0,
+      "dist_counts": {
+        "4": 0,
+        "6": 1,
+        "8": 4,
+        "10": 6,
+        "12": 2,
+        "14": 7,
+        "16": 10
+      },
+      "pct_sat_before_16": 66.67,
+      "pct_sat_le_8": 16.67,
+      "pct_sat_le_10": 36.67,
+      "pct_sat_le_12": 43.33,
+      "compute_saved_pct": 20.83,
+      "mean_intra_scene_variance": 3.2,
+      "scene_variances": {
+        "scan1": 7.5555555555555545,
+        "scan10": 0.888888888888889,
+        "scan110": 0.888888888888889,
+        "scan24": 1.3333333333333333,
+        "scan33": 5.333333333333333
+      },
+      "mean_oracle_absrel": 0.004861,
+      "mean_k16_absrel": 0.00489,
+      "quality_loss_pct": -0.596
+    },
+    "rel_5pct": {
+      "type": "relative",
+      "tolerance": 0.05,
+      "mean_K_star": 11.27,
+      "median_K_star": 10.0,
+      "dist_counts": {
+        "4": 0,
+        "6": 1,
+        "8": 6,
+        "10": 10,
+        "12": 2,
+        "14": 8,
+        "16": 3
+      },
+      "pct_sat_before_16": 90.0,
+      "pct_sat_le_8": 23.33,
+      "pct_sat_le_10": 56.67,
+      "pct_sat_le_12": 63.33,
+      "compute_saved_pct": 29.58,
+      "mean_intra_scene_variance": 3.578,
+      "scene_variances": {
+        "scan1": 5.888888888888889,
+        "scan10": 1.3333333333333333,
+        "scan110": 9.333333333333334,
+        "scan24": 1.3333333333333333,
+        "scan33": 0.0
+      },
+      "mean_oracle_absrel": 0.004926,
+      "mean_k16_absrel": 0.00489,
+      "quality_loss_pct": 0.731
+    },
+    "rel_10pct": {
+      "type": "relative",
+      "tolerance": 0.1,
+      "mean_K_star": 10.0,
+      "median_K_star": 10.0,
+      "dist_counts": {
+        "4": 0,
+        "6": 4,
+        "8": 8,
+        "10": 8,
+        "12": 4,
+        "14": 6,
+        "16": 0
+      },
+      "pct_sat_before_16": 100.0,
+      "pct_sat_le_8": 40.0,
+      "pct_sat_le_10": 66.67,
+      "pct_sat_le_12": 80.0,
+      "compute_saved_pct": 37.5,
+      "mean_intra_scene_variance": 2.444,
+      "scene_variances": {
+        "scan1": 4.5555555555555545,
+        "scan10": 0.8888888888888888,
+        "scan110": 5.333333333333333,
+        "scan24": 0.8888888888888888,
+        "scan33": 0.5555555555555556
+      },
+      "mean_oracle_absrel": 0.005096,
+      "mean_k16_absrel": 0.00489,
+      "quality_loss_pct": 4.195
+    },
+    "abs_0.0001": {
+      "type": "absolute",
+      "epsilon": 0.0001,
+      "mean_K_star": 12.53,
+      "dist_counts": {
+        "4": 0,
+        "6": 1,
+        "8": 4,
+        "10": 7,
+        "12": 1,
+        "14": 8,
+        "16": 9
+      },
+      "pct_sat_before_16": 70.0,
+      "compute_saved_pct": 21.67,
+      "mean_intra_scene_variance": 3.067,
+      "quality_loss_pct": -0.517
+    },
+    "abs_0.0003": {
+      "type": "absolute",
+      "epsilon": 0.00025,
+      "mean_K_star": 11.07,
+      "dist_counts": {
+        "4": 0,
+        "6": 1,
+        "8": 6,
+        "10": 10,
+        "12": 4,
+        "14": 7,
+        "16": 2
+      },
+      "pct_sat_before_16": 93.33,
+      "compute_saved_pct": 30.83,
+      "mean_intra_scene_variance": 3.2,
+      "quality_loss_pct": 1.223
+    },
+    "abs_0.0005": {
+      "type": "absolute",
+      "epsilon": 0.0005,
+      "mean_K_star": 9.73,
+      "dist_counts": {
+        "4": 0,
+        "6": 4,
+        "8": 9,
+        "10": 7,
+        "12": 7,
+        "14": 3,
+        "16": 0
+      },
+      "pct_sat_before_16": 100.0,
+      "compute_saved_pct": 39.17,
+      "mean_intra_scene_variance": 2.533,
+      "quality_loss_pct": 4.892
+    },
+    "abs_0.0010": {
+      "type": "absolute",
+      "epsilon": 0.001,
+      "mean_K_star": 8.6,
+      "dist_counts": {
+        "4": 0,
+        "6": 6,
+        "8": 13,
+        "10": 8,
+        "12": 2,
+        "14": 1,
+        "16": 0
+      },
+      "pct_sat_before_16": 100.0,
+      "compute_saved_pct": 46.25,
+      "mean_intra_scene_variance": 1.844,
+      "quality_loss_pct": 10.236
+    },
+    "abs_0.0020": {
+      "type": "absolute",
+      "epsilon": 0.002,
+      "mean_K_star": 7.47,
+      "dist_counts": {
+        "4": 2,
+        "6": 11,
+        "8": 11,
+        "10": 5,
+        "12": 1,
+        "14": 0,
+        "16": 0
+      },
+      "pct_sat_before_16": 100.0,
+      "compute_saved_pct": 53.33,
+      "mean_intra_scene_variance": 1.511,
+      "quality_loss_pct": 21.308
+    }
+  },
+  "in_distribution_results": {
+    "in_dist_rel_1pct": {
+      "mean_K_star": 13.27,
+      "compute_saved_pct": 17.08,
+      "pct_sat_before_16": 56.67,
+      "dist_counts": {
+        "8": 5,
+        "10": 4,
+        "12": 1,
+        "14": 7,
+        "16": 13
+      }
+    },
+    "in_dist_rel_2pct": {
+      "mean_K_star": 12.73,
+      "compute_saved_pct": 20.42,
+      "pct_sat_before_16": 66.67,
+      "dist_counts": {
+        "8": 5,
+        "10": 6,
+        "12": 2,
+        "14": 7,
+        "16": 10
+      }
+    },
+    "in_dist_rel_5pct": {
+      "mean_K_star": 11.33,
+      "compute_saved_pct": 29.17,
+      "pct_sat_before_16": 90.0,
+      "dist_counts": {
+        "8": 7,
+        "10": 10,
+        "12": 2,
+        "14": 8,
+        "16": 3
+      }
+    },
+    "in_dist_rel_10pct": {
+      "mean_K_star": 10.27,
+      "compute_saved_pct": 35.83,
+      "pct_sat_before_16": 100.0,
+      "dist_counts": {
+        "8": 12,
+        "10": 8,
+        "12": 4,
+        "14": 6,
+        "16": 0
+      }
+    }
+  },
+  "verdict": "GO",
+  "verdict_rationale": "GO: Strong heterogeneous convergence observed. 90.0% of views saturate before K=16 under 5% quality slack (and 66.7% under 2% slack). The intra-scene variance of K* is 3.58, confirming that different views within the same scene reach saturation at different recurrent depths. An oracle per-view halting policy achieves 29.6% recurrent compute savings with only 0.73% quality loss, establishing a strictly superior Pareto frontier over global fixed-K halting."
+}
