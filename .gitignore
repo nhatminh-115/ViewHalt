@@ -190,6 +190,7 @@ ENV/
 datasets/
 outputs/*
 !outputs/v0_*
+!outputs/v05_*
 !outputs/*.png
 third_party/
 visualization/

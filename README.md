@@ -2,7 +2,11 @@
 
 **Research Hypothesis**: In NVIDIA Déjà View / DVLT, different views within the same multi-view scene may require different numbers of recurrent refinement steps. If some views converge earlier than others, future work may use per-view adaptive halting to reduce compute.
 
-> **Phase**: V0 Kill-Test only. Frozen pretrained DVLT model, no custom controllers or architectural modifications.
+> **Phase**: V0.5 Robustness Validation Complete — **Verdict: GO to Controller Design**.
+> **Reports**:
+> - [ViewHalt V0 Feasibility Report](docs/V0_REPORT.md)
+> - [ViewHalt V0.5 Robustness & Predictive Signal Report](docs/V0.5_REPORT.md)
+> **Key Finding**: In-distribution ($K \in \{8, 10, 12, 14, 16\}$) evaluation across 14 DTU scans (168 views) confirms **92.9% early saturation** and **27.5% oracle compute savings** (95% CI: [22.7%, 32.4%]). Recurrent hidden-state delta strongly predicts future gain (Spearman $\rho = 0.621$, AUROC = 0.861).
 > **Hardware Constraint**: Single NVIDIA GeForce RTX 5070 Laptop GPU (8 GB VRAM), batch size 1, inference only (bf16).
 > **Upstream Base**: [nv-tlabs/dvlt](https://github.com/nv-tlabs/dvlt) pinned at commit `134b21f2af02d98039e79ab5dd48f36dc8123c97` (Apache-2.0 / NVIDIA Research license).
 
@@ -271,4 +275,3 @@ import (do not vendor) their respective upstream packages, each of which is
 governed by its own license — see
 [THIRD_PARTY_LICENSES.md](THIRD_PARTY_LICENSES.md) §"Upstream packages used
 for evaluation".
->>>>>>> upstream/main

@@ -1,0 +1,520 @@
+{
+  "metadata": {
+    "version": "V0.5",
+    "scans": [
+      "scan1",
+      "scan4",
+      "scan9",
+      "scan10",
+      "scan11",
+      "scan12",
+      "scan15",
+      "scan23",
+      "scan24",
+      "scan29",
+      "scan33",
+      "scan48",
+      "scan62",
+      "scan110"
+    ],
+    "k_values": [
+      8,
+      10,
+      12,
+      14,
+      16
+    ],
+    "subsets": [
+      "subset_middle",
+      "subset_uniform"
+    ],
+    "num_views_per_sequence": 6,
+    "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+    "total_vram_gb": 7.96,
+    "precision": "bf16",
+    "resolution": [
+      378,
+      504
+    ]
+  },
+  "fixed_k_summary": {
+    "8": {
+      "mean_abs_rel": 0.011604,
+      "std_abs_rel": 0.012214,
+      "mean_rmse_mm": 17.9887,
+      "mean_rot_err_deg": 0.0179,
+      "mean_geom_err_mm": 656.3309,
+      "mean_hidden_delta": 0.117763,
+      "mean_depth_delta": 0.0,
+      "mean_runtime_ms": 453.7,
+      "compute_saved_pct": 50.0,
+      "quality_loss_pct": 29.78
+    },
+    "10": {
+      "mean_abs_rel": 0.009767,
+      "std_abs_rel": 0.011921,
+      "mean_rmse_mm": 16.7054,
+      "mean_rot_err_deg": 0.0148,
+      "mean_geom_err_mm": 656.3192,
+      "mean_hidden_delta": 0.09369,
+      "mean_depth_delta": 0.011954,
+      "mean_runtime_ms": 466.9,
+      "compute_saved_pct": 37.5,
+      "quality_loss_pct": 9.24
+    },
+    "12": {
+      "mean_abs_rel": 0.009125,
+      "std_abs_rel": 0.011658,
+      "mean_rmse_mm": 16.2904,
+      "mean_rot_err_deg": 0.0135,
+      "mean_geom_err_mm": 656.3178,
+      "mean_hidden_delta": 0.080238,
+      "mean_depth_delta": 0.007227,
+      "mean_runtime_ms": 502.5,
+      "compute_saved_pct": 25.0,
+      "quality_loss_pct": 2.06
+    },
+    "14": {
+      "mean_abs_rel": 0.008955,
+      "std_abs_rel": 0.011508,
+      "mean_rmse_mm": 16.1946,
+      "mean_rot_err_deg": 0.0125,
+      "mean_geom_err_mm": 656.3158,
+      "mean_hidden_delta": 0.072629,
+      "mean_depth_delta": 0.005746,
+      "mean_runtime_ms": 538.4,
+      "compute_saved_pct": 12.5,
+      "quality_loss_pct": 0.16
+    },
+    "16": {
+      "mean_abs_rel": 0.008941,
+      "std_abs_rel": 0.011459,
+      "mean_rmse_mm": 16.189,
+      "mean_rot_err_deg": 0.0119,
+      "mean_geom_err_mm": 656.3162,
+      "mean_hidden_delta": 0.067573,
+      "mean_depth_delta": 0.004526,
+      "mean_runtime_ms": 581.1,
+      "compute_saved_pct": 0.0,
+      "quality_loss_pct": 0.0
+    }
+  },
+  "saturation_results": {
+    "rel_1pct": {
+      "tolerance": 0.01,
+      "mean_K_star": 13.12,
+      "median_K_star": 14.0,
+      "std_K_star": 2.59,
+      "dist_counts": {
+        "8": 15,
+        "10": 23,
+        "12": 35,
+        "14": 43,
+        "16": 52
+      },
+      "pct_sat_before_16": 69.05,
+      "pct_sat_le_8": 8.93,
+      "pct_sat_le_10": 22.62,
+      "pct_sat_le_12": 43.45,
+      "compute_saved_pct": 18.01,
+      "mean_intra_scene_variance": 4.131,
+      "scene_variances": {
+        "scan1": 9.63888888888889,
+        "scan4": 6.333333333333333,
+        "scan9": 2.9722222222222228,
+        "scan10": 3.0,
+        "scan11": 2.3055555555555554,
+        "scan12": 2.75,
+        "scan15": 3.8888888888888897,
+        "scan23": 2.888888888888889,
+        "scan24": 4.555555555555557,
+        "scan29": 5.5555555555555545,
+        "scan33": 2.0833333333333335,
+        "scan48": 4.888888888888888,
+        "scan62": 3.638888888888888,
+        "scan110": 3.3333333333333335
+      },
+      "mean_oracle_absrel": 0.008841,
+      "mean_k16_absrel": 0.008941,
+      "quality_loss_pct": -1.12
+    },
+    "rel_2pct": {
+      "tolerance": 0.02,
+      "mean_K_star": 12.71,
+      "median_K_star": 14.0,
+      "std_K_star": 2.48,
+      "dist_counts": {
+        "8": 18,
+        "10": 24,
+        "12": 38,
+        "14": 56,
+        "16": 32
+      },
+      "pct_sat_before_16": 80.95,
+      "pct_sat_le_8": 10.71,
+      "pct_sat_le_10": 25.0,
+      "pct_sat_le_12": 47.62,
+      "compute_saved_pct": 20.54,
+      "mean_intra_scene_variance": 3.956,
+      "scene_variances": {
+        "scan1": 9.63888888888889,
+        "scan4": 6.972222222222224,
+        "scan9": 2.0833333333333335,
+        "scan10": 2.972222222222222,
+        "scan11": 4.305555555555556,
+        "scan12": 1.638888888888889,
+        "scan15": 3.4166666666666665,
+        "scan23": 3.2222222222222228,
+        "scan24": 2.972222222222222,
+        "scan29": 6.5555555555555545,
+        "scan33": 2.305555555555556,
+        "scan48": 4.3055555555555545,
+        "scan62": 2.6666666666666665,
+        "scan110": 2.3333333333333335
+      },
+      "mean_oracle_absrel": 0.008887,
+      "mean_k16_absrel": 0.008941,
+      "quality_loss_pct": -0.599
+    },
+    "rel_5pct": {
+      "tolerance": 0.05,
+      "mean_K_star": 11.6,
+      "median_K_star": 12.0,
+      "std_K_star": 2.28,
+      "dist_counts": {
+        "8": 27,
+        "10": 37,
+        "12": 59,
+        "14": 33,
+        "16": 12
+      },
+      "pct_sat_before_16": 92.86,
+      "pct_sat_le_8": 16.07,
+      "pct_sat_le_10": 38.1,
+      "pct_sat_le_12": 73.21,
+      "compute_saved_pct": 27.53,
+      "mean_intra_scene_variance": 2.952,
+      "scene_variances": {
+        "scan1": 4.3055555555555545,
+        "scan4": 1.4166666666666667,
+        "scan9": 2.3333333333333335,
+        "scan10": 4.555555555555556,
+        "scan11": 2.972222222222222,
+        "scan12": 1.0,
+        "scan15": 3.5555555555555554,
+        "scan23": 3.3333333333333335,
+        "scan24": 2.5555555555555554,
+        "scan29": 3.2222222222222228,
+        "scan33": 2.5555555555555554,
+        "scan48": 6.0,
+        "scan62": 1.8888888888888886,
+        "scan110": 1.638888888888889
+      },
+      "mean_oracle_absrel": 0.009053,
+      "mean_k16_absrel": 0.008941,
+      "quality_loss_pct": 1.249
+    },
+    "rel_10pct": {
+      "tolerance": 0.1,
+      "mean_K_star": 10.75,
+      "median_K_star": 10.0,
+      "std_K_star": 2.04,
+      "dist_counts": {
+        "8": 40,
+        "10": 50,
+        "12": 56,
+        "14": 19,
+        "16": 3
+      },
+      "pct_sat_before_16": 98.21,
+      "pct_sat_le_8": 23.81,
+      "pct_sat_le_10": 53.57,
+      "pct_sat_le_12": 86.9,
+      "compute_saved_pct": 32.81,
+      "mean_intra_scene_variance": 2.117,
+      "scene_variances": {
+        "scan1": 2.3055555555555554,
+        "scan4": 1.2222222222222223,
+        "scan9": 1.222222222222222,
+        "scan10": 3.4166666666666665,
+        "scan11": 2.305555555555556,
+        "scan12": 2.3055555555555562,
+        "scan15": 2.0833333333333335,
+        "scan23": 2.972222222222222,
+        "scan24": 1.6388888888888893,
+        "scan29": 2.972222222222222,
+        "scan33": 0.8888888888888887,
+        "scan48": 4.333333333333333,
+        "scan62": 1.0,
+        "scan110": 0.9722222222222223
+      },
+      "mean_oracle_absrel": 0.009275,
+      "mean_k16_absrel": 0.008941,
+      "quality_loss_pct": 3.732
+    }
+  },
+  "scene_level_uncertainty": {
+    "rel_1pct": {
+      "mean_savings_pct": 18.01,
+      "se_savings_pct": 2.78,
+      "ci95_savings_pct": [
+        13.1,
+        23.44
+      ],
+      "mean_intra_scene_var": 4.131,
+      "ci95_intra_scene_var": [
+        3.234,
+        5.226
+      ],
+      "mean_early_sat_pct": 69.05,
+      "ci95_early_sat_pct": [
+        57.74,
+        80.36
+      ],
+      "per_scene_savings": {
+        "scan1": 36.46,
+        "scan4": 18.75,
+        "scan9": 11.46,
+        "scan10": 6.25,
+        "scan11": 19.79,
+        "scan12": 9.38,
+        "scan15": 14.58,
+        "scan23": 8.33,
+        "scan24": 35.42,
+        "scan29": 33.33,
+        "scan33": 21.88,
+        "scan48": 16.67,
+        "scan62": 7.29,
+        "scan110": 12.5
+      },
+      "per_scene_vars": {
+        "scan1": 9.639,
+        "scan4": 6.333,
+        "scan9": 2.972,
+        "scan10": 3.0,
+        "scan11": 2.306,
+        "scan12": 2.75,
+        "scan15": 3.889,
+        "scan23": 2.889,
+        "scan24": 4.556,
+        "scan29": 5.556,
+        "scan33": 2.083,
+        "scan48": 4.889,
+        "scan62": 3.639,
+        "scan110": 3.333
+      }
+    },
+    "rel_2pct": {
+      "mean_savings_pct": 20.54,
+      "se_savings_pct": 2.57,
+      "ci95_savings_pct": [
+        16.0,
+        25.6
+      ],
+      "mean_intra_scene_var": 3.956,
+      "ci95_intra_scene_var": [
+        2.911,
+        5.181
+      ],
+      "mean_early_sat_pct": 80.95,
+      "ci95_early_sat_pct": [
+        71.43,
+        89.29
+      ],
+      "per_scene_savings": {
+        "scan1": 36.46,
+        "scan4": 19.79,
+        "scan9": 15.62,
+        "scan10": 7.29,
+        "scan11": 23.96,
+        "scan12": 13.54,
+        "scan15": 15.62,
+        "scan23": 10.42,
+        "scan24": 36.46,
+        "scan29": 35.42,
+        "scan33": 23.96,
+        "scan48": 17.71,
+        "scan62": 12.5,
+        "scan110": 18.75
+      },
+      "per_scene_vars": {
+        "scan1": 9.639,
+        "scan4": 6.972,
+        "scan9": 2.083,
+        "scan10": 2.972,
+        "scan11": 4.306,
+        "scan12": 1.639,
+        "scan15": 3.417,
+        "scan23": 3.222,
+        "scan24": 2.972,
+        "scan29": 6.556,
+        "scan33": 2.306,
+        "scan48": 4.306,
+        "scan62": 2.667,
+        "scan110": 2.333
+      }
+    },
+    "rel_5pct": {
+      "mean_savings_pct": 27.53,
+      "se_savings_pct": 2.61,
+      "ci95_savings_pct": [
+        22.69,
+        32.44
+      ],
+      "mean_intra_scene_var": 2.952,
+      "ci95_intra_scene_var": [
+        2.302,
+        3.665
+      ],
+      "mean_early_sat_pct": 92.86,
+      "ci95_early_sat_pct": [
+        85.12,
+        98.81
+      ],
+      "per_scene_savings": {
+        "scan1": 42.71,
+        "scan4": 34.38,
+        "scan9": 18.75,
+        "scan10": 14.58,
+        "scan11": 30.21,
+        "scan12": 18.75,
+        "scan15": 20.83,
+        "scan23": 12.5,
+        "scan24": 39.58,
+        "scan29": 39.58,
+        "scan33": 35.42,
+        "scan48": 25.0,
+        "scan62": 27.08,
+        "scan110": 26.04
+      },
+      "per_scene_vars": {
+        "scan1": 4.306,
+        "scan4": 1.417,
+        "scan9": 2.333,
+        "scan10": 4.556,
+        "scan11": 2.972,
+        "scan12": 1.0,
+        "scan15": 3.556,
+        "scan23": 3.333,
+        "scan24": 2.556,
+        "scan29": 3.222,
+        "scan33": 2.556,
+        "scan48": 6.0,
+        "scan62": 1.889,
+        "scan110": 1.639
+      }
+    },
+    "rel_10pct": {
+      "mean_savings_pct": 32.81,
+      "se_savings_pct": 2.49,
+      "ci95_savings_pct": [
+        28.2,
+        37.57
+      ],
+      "mean_intra_scene_var": 2.117,
+      "ci95_intra_scene_var": [
+        1.609,
+        2.663
+      ],
+      "mean_early_sat_pct": 98.21,
+      "ci95_early_sat_pct": [
+        95.24,
+        100.0
+      ],
+      "per_scene_savings": {
+        "scan1": 44.79,
+        "scan4": 35.42,
+        "scan9": 22.92,
+        "scan10": 21.88,
+        "scan11": 36.46,
+        "scan12": 23.96,
+        "scan15": 28.12,
+        "scan23": 17.71,
+        "scan24": 44.79,
+        "scan29": 42.71,
+        "scan33": 45.83,
+        "scan48": 31.25,
+        "scan62": 31.25,
+        "scan110": 32.29
+      },
+      "per_scene_vars": {
+        "scan1": 2.306,
+        "scan4": 1.222,
+        "scan9": 1.222,
+        "scan10": 3.417,
+        "scan11": 2.306,
+        "scan12": 2.306,
+        "scan15": 2.083,
+        "scan23": 2.972,
+        "scan24": 1.639,
+        "scan29": 2.972,
+        "scan33": 0.889,
+        "scan48": 4.333,
+        "scan62": 1.0,
+        "scan110": 0.972
+      }
+    }
+  },
+  "predictive_signal_analysis": {
+    "spearman_hidden_delta": {
+      "rho": 0.6209,
+      "p_val": 7.24772282837771e-73
+    },
+    "pearson_hidden_delta": {
+      "r": 0.5744,
+      "p_val": 2.9885603493126265e-60
+    },
+    "spearman_depth_delta": {
+      "rho": -0.2322,
+      "p_val": 1.1268839028257749e-09
+    },
+    "signal_metrics_by_tolerance": {
+      "1%": {
+        "positive_rate": 34.38,
+        "hidden_delta": {
+          "AUROC": 0.7925,
+          "AUPRC": 0.6143
+        },
+        "depth_delta": {
+          "AUROC": 0.4406,
+          "AUPRC": 0.3156
+        }
+      },
+      "2%": {
+        "positive_rate": 40.03,
+        "hidden_delta": {
+          "AUROC": 0.8225,
+          "AUPRC": 0.7103
+        },
+        "depth_delta": {
+          "AUROC": 0.4428,
+          "AUPRC": 0.3664
+        }
+      },
+      "5%": {
+        "positive_rate": 54.46,
+        "hidden_delta": {
+          "AUROC": 0.8605,
+          "AUPRC": 0.8601
+        },
+        "depth_delta": {
+          "AUROC": 0.4138,
+          "AUPRC": 0.4852
+        }
+      },
+      "10%": {
+        "positive_rate": 65.48,
+        "hidden_delta": {
+          "AUROC": 0.8846,
+          "AUPRC": 0.9291
+        },
+        "depth_delta": {
+          "AUROC": 0.3648,
+          "AUPRC": 0.5748
+        }
+      }
+    }
+  },
+  "verdict": "GO",
+  "verdict_rationale": "GO: Corrected in-distribution robustness validation confirmed across 168 views and 14 DTU scenes. Heterogeneous convergence is robust and stable: 92.9% of views saturate before K=16 at 5% tolerance (81.0% at 2% tolerance). The scene-wise mean compute savings is 27.5% with 95% bootstrap CI [22.7%, 32.4%], strictly bounded away from zero. Mean intra-scene variance is 2.95, proving per-view heterogeneity is not an artifact of scan selection. Crucially, cheap observable signals demonstrate statistically significant predictive capability for future gain (Spearman rho = 0.621, AUROC = 0.861), providing an empirical foundation for controller design."
+}
