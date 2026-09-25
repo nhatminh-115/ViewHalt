@@ -2,17 +2,19 @@
 
 **Research Hypothesis**: In NVIDIA Déjà View / DVLT, different views within the same multi-view scene may require different numbers of recurrent refinement steps. If some views converge earlier than others, future work may use per-view adaptive halting to reduce compute.
 
-> **Phase**: V0.8 True Asynchronous Freeze & Real Compute Validation Complete — **Final Scientific Verdict: GO to Controller Research**.
+> **Phase**: V0.8.1 Correct Matched-Quality Real-Latency Validation Complete — **Final Scientific Verdict: KILL Economic Claim for Wall-Clock Speedup**.
 > **Reports**:
 > - [ViewHalt V0 Feasibility Report](docs/V0_REPORT.md)
 > - [ViewHalt V0.5 Robustness & Predictive Signal Report](docs/V0.5_REPORT.md)
 > - [ViewHalt V0.6 Common-Trajectory & Freeze Oracle Report](docs/V0.6_REPORT.md)
 > - [ViewHalt V0.7 Dense Pareto Resolution & Headroom Report](docs/V0.7_REPORT.md)
 > - [ViewHalt V0.8 True Freeze & Real Compute Report](docs/V0.8_REPORT.md)
-> **Key Finding (V0.8 Real Compute Validation)**:
-> 1. **True Static Freezing Validated**: Bypassing frame attention and using frozen static K/V in global attention preserves reconstruction quality (AbsRel 0.009274 vs 0.009163) with minimal active view error delta (+0.57% to +2.93%).
-> 2. **Exact Sparse Execution Engine**: Sparse Active-Q / Frozen-KV with KV caching matches the reference static implementation to 7 decimal places (mean delta = $1.51 \times 10^{-7}$).
-> 3. **Measured Real Latency Headroom**: On single RTX 5070 Laptop GPU, sparse execution cuts recurrent block latency from 396.4 ms (K=16) to 341.4 ms (14.34% latency saving, 1.207x speedup). At matched quality, it outperforms Fixed $i=15$ by **+10.62% real latency headroom** (**1.165x speedup**, 95% bootstrap CI: [+2.26%, +19.53%], $p < 0.005$).
+> - [ViewHalt V0.8.1 Correct Matched-Quality Real-Latency Report](docs/V0.8.1_REPORT.md)
+> **Key Finding (V0.8.1 Full 14-Scan Benchmark & Scene-Cluster Bootstrap)**:
+> 1. **Dynamic Matched Baseline Corrected**: Under full evaluation across 168 views, Fixed $i=14$ achieves higher reconstruction quality (AbsRel 0.009266) than Sparse Oracle 5% (AbsRel 0.009274), properly establishing **Fixed $i=14$ as the true matched-quality baseline** (not Fixed $i=15$).
+> 2. **Real Wall-Clock Deficit**: On full 14 physical scans (28 sequences, 1960 timed runs), controller-free Sparse Oracle achieves 358.9 ms, which is **8.07 ms SLOWER than Fixed $i=14$ (350.8 ms)** (point-estimate headroom **-2.04%**, real speedup **0.978x** vs Fixed $i=14$).
+> 3. **Scene-Cluster Bootstrap Falsification**: Strict 10,000 scene-clustered resamples over the 14 physical DTU scans yield a mean latency headroom of **-0.03% [95% CI: -4.92%, +4.68%]** with **49.77% failure rate** below breakeven.
+> 4. **Scientific Conclusion**: Per-view adaptive halting provides theoretical FLOP reductions (+16.78%), but irregular GPU memory access and kernel dispatch overhead eliminate all wall-clock gains over uniform Fixed $i=14$ execution. Practitioners should simply use uniform stopping at Fixed $i=14$ ($1.13x$ speedup, zero overhead).
 > **Hardware Constraint**: Single NVIDIA GeForce RTX 5070 Laptop GPU (8 GB VRAM), batch size 1, inference only (bf16).
 > **Upstream Base**: [nv-tlabs/dvlt](https://github.com/nv-tlabs/dvlt) pinned at commit `134b21f2af02d98039e79ab5dd48f36dc8123c97` (Apache-2.0 / NVIDIA Research license).
 

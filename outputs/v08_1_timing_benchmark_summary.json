@@ -1,0 +1,72 @@
+{
+  "Fixed_K16": {
+    "mean_recurrent_flops_gflops": 3641.95,
+    "mean_flop_savings_pct": 0.0,
+    "median_latency_ms": 392.55,
+    "mean_latency_ms": 396.33,
+    "iqr_latency_ms": 17.5,
+    "mean_latency_savings_vs_k16_pct": 0.0,
+    "mean_speedup_vs_k16": 1.0,
+    "mean_peak_vram_mb": 1201.3
+  },
+  "Fixed_i15": {
+    "mean_recurrent_flops_gflops": 3414.33,
+    "mean_flop_savings_pct": 6.25,
+    "median_latency_ms": 369.89,
+    "mean_latency_ms": 369.2,
+    "iqr_latency_ms": 18.13,
+    "mean_latency_savings_vs_k16_pct": 6.59,
+    "mean_speedup_vs_k16": 1.075,
+    "mean_peak_vram_mb": 1201.3
+  },
+  "Fixed_i14": {
+    "mean_recurrent_flops_gflops": 3186.71,
+    "mean_flop_savings_pct": 12.5,
+    "median_latency_ms": 342.26,
+    "mean_latency_ms": 350.79,
+    "iqr_latency_ms": 21.6,
+    "mean_latency_savings_vs_k16_pct": 11.28,
+    "mean_speedup_vs_k16": 1.132,
+    "mean_peak_vram_mb": 1201.3
+  },
+  "Fixed_i13": {
+    "mean_recurrent_flops_gflops": 2959.09,
+    "mean_flop_savings_pct": 18.75,
+    "median_latency_ms": 318.44,
+    "mean_latency_ms": 323.43,
+    "iqr_latency_ms": 24.19,
+    "mean_latency_savings_vs_k16_pct": 18.09,
+    "mean_speedup_vs_k16": 1.229,
+    "mean_peak_vram_mb": 1201.3
+  },
+  "Fixed_i12": {
+    "mean_recurrent_flops_gflops": 2731.46,
+    "mean_flop_savings_pct": 25.0,
+    "median_latency_ms": 292.05,
+    "mean_latency_ms": 296.98,
+    "iqr_latency_ms": 14.2,
+    "mean_latency_savings_vs_k16_pct": 24.87,
+    "mean_speedup_vs_k16": 1.337,
+    "mean_peak_vram_mb": 1201.3
+  },
+  "Sparse_Oracle_2pct": {
+    "mean_recurrent_flops_gflops": 3170.45,
+    "mean_flop_savings_pct": 12.95,
+    "median_latency_ms": 377.79,
+    "mean_latency_ms": 377.8,
+    "iqr_latency_ms": 32.45,
+    "mean_latency_savings_vs_k16_pct": 4.38,
+    "mean_speedup_vs_k16": 1.066,
+    "mean_peak_vram_mb": 1255.7
+  },
+  "Sparse_Oracle_5pct": {
+    "mean_recurrent_flops_gflops": 3030.89,
+    "mean_flop_savings_pct": 16.78,
+    "median_latency_ms": 357.78,
+    "mean_latency_ms": 358.86,
+    "iqr_latency_ms": 41.7,
+    "mean_latency_savings_vs_k16_pct": 9.17,
+    "mean_speedup_vs_k16": 1.125,
+    "mean_peak_vram_mb": 1254.3
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "metadata": {
+    "version": "V0.8.1",
+    "num_physical_scenes": 14,
+    "num_sequences": 28,
+    "num_view_instances": 168,
+    "runtime_token_count_P": 977,
+    "runtime_resolution": [
+      378,
+      504
+    ]
+  },
+  "point_estimates": {
+    "sparse_oracle_5pct": {
+      "mean_abs_rel": 0.009274,
+      "mean_latency_ms": 358.86,
+      "median_latency_ms": 357.78,
+      "analytical_flops_gflops": 3030.89
+    },
+    "sparse_oracle_2pct": {
+      "mean_abs_rel": 0.009017,
+      "mean_latency_ms": 377.8,
+      "median_latency_ms": 377.79,
+      "analytical_flops_gflops": 3170.45
+    },
+    "fixed_frontier": {
+      "12": {
+        "mean_abs_rel": 0.010434,
+        "mean_latency_ms": 296.98,
+        "median_latency_ms": 292.05,
+        "analytical_flops_gflops": 2731.46
+      },
+      "13": {
+        "mean_abs_rel": 0.009697,
+        "mean_latency_ms": 323.43,
+        "median_latency_ms": 318.44,
+        "analytical_flops_gflops": 2959.09
+      },
+      "14": {
+        "mean_abs_rel": 0.009266,
+        "mean_latency_ms": 350.79,
+        "median_latency_ms": 342.26,
+        "analytical_flops_gflops": 3186.71
+      },
+      "15": {
+        "mean_abs_rel": 0.009036,
+        "mean_latency_ms": 369.2,
+        "median_latency_ms": 369.89,
+        "analytical_flops_gflops": 3414.33
+      },
+      "16": {
+        "mean_abs_rel": 0.008941,
+        "mean_latency_ms": 396.33,
+        "median_latency_ms": 392.55,
+        "analytical_flops_gflops": 3641.95
+      }
+    },
+    "dynamic_matched_selection_5pct": {
+      "matched_policy": "Fixed_i14",
+      "matched_step": 14,
+      "matched_abs_rel": 0.009266,
+      "matched_mean_latency_ms": 350.79
+    },
+    "separated_efficiency_quantities_5pct": {
+      "quantity_1_flop_saving_vs_k16_pct": 16.78,
+      "quantity_2_latency_saving_vs_k16_pct": 9.17,
+      "quantity_3_matched_quality_latency_advantage_vs_matched_pct": -2.04,
+      "quantity_3_relative_advantage_vs_matched_pct": -2.3,
+      "quantity_3_speedup_vs_matched": 0.978,
+      "quantity_3_delta_latency_ms": -8.07
+    }
+  },
+  "scene_cluster_bootstrap": {
+    "num_resamples": 10000,
+    "cluster_level": "physical_scene (14 scenes)",
+    "matched_policy_distribution": {
+      "14": 49.94,
+      "15": 46.87,
+      "13": 3.09,
+      "16": 0.06,
+      "12": 0.04
+    },
+    "matched_latency_headroom_mean_pct": -0.03,
+    "matched_latency_headroom_95ci_lower_pct": -4.92,
+    "matched_latency_headroom_95ci_upper_pct": 4.68,
+    "bootstrap_failure_rate_pct": 49.77,
+    "speedup_vs_matched_mean": 1.0,
+    "speedup_vs_matched_95ci_lower": 0.947,
+    "speedup_vs_matched_95ci_upper": 1.053
+  }
+}
