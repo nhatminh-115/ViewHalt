@@ -1,0 +1,71 @@
+{
+  "pretrained": {
+    "total_params": 118461704,
+    "trainable_params": 0,
+    "description": "Untouched Pretrained DVLT model"
+  },
+  "interval_depth_scaling_alone": {
+    "total_params": 118461704,
+    "trainable_params": 316032,
+    "description": "Stage A: Only IntervalDepthScaling gating MLPs trainable"
+  },
+  "stage_b1_rank4": {
+    "gate_params": 316032,
+    "lora_params": 36864,
+    "total_trainable_params": 352896,
+    "rank": 4,
+    "alpha": 4.0,
+    "targets": [
+      "frame_attn.attn.qkv",
+      "frame_attn.attn.proj",
+      "global_attn.attn.qkv",
+      "global_attn.attn.proj"
+    ],
+    "target_param_breakdown": {
+      "frame_attn.attn.qkv": 12288,
+      "frame_attn.attn.proj": 6144,
+      "global_attn.attn.qkv": 12288,
+      "global_attn.attn.proj": 6144
+    },
+    "description": "Stage B1: IntervalDepthScaling + Shared Attention LoRA rank 4"
+  },
+  "stage_b2_rank8": {
+    "gate_params": 316032,
+    "lora_params": 73728,
+    "total_trainable_params": 389760,
+    "rank": 8,
+    "alpha": 8.0,
+    "targets": [
+      "frame_attn.attn.qkv",
+      "frame_attn.attn.proj",
+      "global_attn.attn.qkv",
+      "global_attn.attn.proj"
+    ],
+    "target_param_breakdown": {
+      "frame_attn.attn.qkv": 24576,
+      "frame_attn.attn.proj": 12288,
+      "global_attn.attn.qkv": 24576,
+      "global_attn.attn.proj": 12288
+    },
+    "description": "Stage B2: IntervalDepthScaling + Shared Attention LoRA rank 8"
+  },
+  "stage_b3_rank8_plus_mlp": {
+    "gate_params": 316032,
+    "attention_lora_params": 73728,
+    "mlp_lora_params": 122880,
+    "total_trainable_params": 512640,
+    "rank": 8,
+    "alpha": 8.0,
+    "targets": [
+      "frame_attn.attn.qkv",
+      "frame_attn.attn.proj",
+      "global_attn.attn.qkv",
+      "global_attn.attn.proj",
+      "frame_attn.mlp.fc1",
+      "frame_attn.mlp.fc2",
+      "global_attn.mlp.fc1",
+      "global_attn.mlp.fc2"
+    ],
+    "description": "Stage B3 (Contingent): Stage B2 + Shared MLP LoRA rank 8"
+  }
+}
